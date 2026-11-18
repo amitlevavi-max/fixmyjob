@@ -1,0 +1,32 @@
+{
+  "persona": "Shawna Garcia",
+  "llmJob": "construction laborer",
+  "goal": "claim_rights",
+  "soc": "47-2061",
+  "monthsInJob": 15,
+  "annualPay": 33900,
+  "location": {
+    "state": "OK",
+    "metro": "Tulsa"
+  },
+  "zip": "74103",
+  "workSchedule": {
+    "hoursPerWeek": 50,
+    "daysPerWeek": 5,
+    "weekendHoursPerWeek": 0,
+    "overtimeMultiplier": 1.5,
+    "weekendPremiumPct": 0
+  },
+  "rightsAnswers": {
+    "payUnit": "hour",
+    "workType": "w2",
+    "shifts": [
+      "over8",
+      "weekends"
+    ],
+    "concerns": [
+      "noOvertime"
+    ]
+  },
+  "details": true
+}

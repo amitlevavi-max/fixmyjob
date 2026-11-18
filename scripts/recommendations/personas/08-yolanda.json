@@ -1,0 +1,14 @@
+{
+  "persona": "Yolanda Coleman",
+  "llmJob": "assembly line worker",
+  "goal": "rise_up",
+  "soc": "51-2090",
+  "monthsInJob": 72,
+  "annualPay": 40700,
+  "location": {
+    "state": "KY",
+    "metro": "Louisville"
+  },
+  "zip": "40202",
+  "details": true
+}

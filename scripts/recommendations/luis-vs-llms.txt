@@ -1,0 +1,204 @@
+﻿
+> fixmyjob@2026.9.21 recs
+> node scripts/recommendations/run.mjs scripts/recommendations/personas/07-luis.json --llms claude,chatgpt
+
+
+══ 07-luis ═══════════════════════════════════════════════════════════════
+Job:       Nursing Assistants (31-1131)  · given soc
+Goals:     earn_more
+Pay:       $35,600 a year · 18 months in the job
+Location:  Memphis, TN · ZIP 38103
+
+▸ QUICK WINS — A few hours of your time
+              —  Take a short course: AHA BLS Provider Course
+                 add_on · for your goals: earn_more · id: course:web:allcpr-aha-bls-provider-course
+                 3 hours · Memphis, TN · AllCPR  [Found by web search on 10/28/2026]
+                 Course: AHA BLS Provider Course · AllCPR (web search, 2026-10-28)
+                 Where: in_person · Memphis, TN · Length: 3 hours · Price: $69 (from https://allcpr.org/product/aha-bls-provider-course-in-memphis-tn-initialrenewal/)
+                 Credential: American Heart Association BLS certification
+                 Contact: https://allcpr.org/product/aha-bls-provider-course-in-memphis-tn-initialrenewal/
+                 Results: none (not on the DOL list)
+     +$4,900/yr  Join SEIU
+                 add_on · for your goals: — · id: union-membership
+                 Union healthcare support workers earn 14% more than non-union healthcare support workers (median weekly pay)  [US Bureau of Labor Statistics, 2025 data]
+
+▸ WORTH THE EFFORT — Weeks or months of training
+    +$46,000/yr  Move up to surgical assistant
+                 MOVE UP · career_move · for your goals: earn_more · id: move:promotion:29-9093 · training nearby: unknown
+                 Typical pay for surgical assistants in Tennessee is $81,640/yr — $46,000 more than you earn now  [US Bureau of Labor Statistics, 2025 · O*NET]
+    +$23,300/yr  Move up to practical nurse
+                 MOVE UP · career_move · for your goals: earn_more · id: move:promotion:29-2061 · training nearby: unknown
+                 Typical pay for practical nurses in Tennessee is $58,870/yr — $23,300 more than you earn now  [US Bureau of Labor Statistics, 2025 · O*NET]
+       +$300/yr  Get Certified nurse aide (state nurse aide registry)
+                 add_on · for your goals: earn_more · id: cred:certified-nurse-aide-state-nurse-aide-registry
+                 Full-time nursing assistants with a certification or license typically earn $300–$2,800 more a year than those without (median pay)  [Fix My Job estimate, based on US Census Bureau data (2024-08 to 2026-08)]
+     +$6,100/yr  Switch to psychiatric aide
+                 CAREER CHANGE · career_move · for your goals: — · id: move:change:31-1133
+                 Typical pay for psychiatric aides in Tennessee is about $41,739/yr (estimated from national pay) — $6,100 more than you earn now  [US Bureau of Labor Statistics, 2025 · O*NET]
+     +$4,700/yr  Switch to emergency medical technician
+                 CAREER CHANGE · career_move · for your goals: — · id: move:change:29-2042
+                 Typical pay for emergency medical technicians in Tennessee is $40,330/yr — $4,700 more than you earn now  [US Bureau of Labor Statistics, 2025 · O*NET]
+
+▸ BIG MOVES — A degree or a move to a new city
+    +$45,900/yr  Move up to registered nurse
+                 MOVE UP · career_move · for your goals: earn_more · id: move:promotion:29-1141 · training nearby: unknown
+                 Typical pay for registered nurses in Tennessee is $81,500/yr — $45,900 more than you earn now  [US Bureau of Labor Statistics, 2025 · O*NET]
+    +$13,100/yr  Relocate to a Higher-Wage Metro
+                 career_move · for your goals: earn_more · id: move-high-wage
+                 Typical pay for your job in Grand Forks is worth 37% more than you earn now, after living costs  [Fix My Job estimate, based on US Bureau of Labor Statistics and US Bureau of Economic Analysis data]
+    +$26,800/yr  Switch to occupational therapy assistant
+                 CAREER CHANGE · career_move · for your goals: — · id: move:change:31-2011
+                 Typical pay for occupational therapy assistants in Tennessee is $62,420/yr — $26,800 more than you earn now  [US Bureau of Labor Statistics, 2025 · O*NET]
+
+Potential yearly boost: $51,200
+        $300  Get Certified nurse aide (state nurse aide registry)
+      $4,900  Join SEIU
+     $46,000  Best career move: Move up to surgical assistant (other career moves are alternatives, so only the best counts)
+(8820 ms)
+
+▸ WHAT A REGULAR USER WOULD GET FROM AN LLM
+  Question: "I am a nursing assistant with 1 and a half years of experience. I live in Memphis, Tennessee. I earn $35,600 a year. What would you advise me to do to earn more?"
+
+  ── Claude (claude-sonnet-5-5, web search on, 16.3 s) ────────────────────
+  At $35,600 you're earning about $17/hr if you work full time. That's roughly average for Memphis. Here are the options, from biggest raise to smallest.
+  
+  ## 1. Become an LPN (the best next step)
+  - ZipRecruiter lists the average LPN pay in Memphis at $55,463 a year. Indeed's average is $26.97 per hour.
+  - Glassdoor reports higher figures. Its average is $63,705 per year.
+  - Sources disagree, but all of them put LPN pay well above what you make now. A realistic expectation is a jump of about $15,000–$25,000 a year.
+  - LPN programs typically take 12–18 months. Community college tuition is lower than you might expect. For example, some community college LPN programs list in-state tuition around $3,300–$3,740. Those two are in Arkansas and Mississippi, so check Tennessee options too, such as Southwest Tennessee Community College and Concorde.
+  - Your 1.5 years of experience will help your application and make the coursework easier.
+  
+  ## 2. Use employer tuition help
+  Ask your HR department about this first, because it could cut your costs a lot.
+  - Methodist Le Bonheur offers tuition assistance after six months of continuous employment. It also has LPN and RN residency programs and an LPN-to-RN associate degree pathway.
+  - Methodist has also advertised student loan repayment of up to $25,000 for continuing to RN. That listing is a couple of years old, so confirm the current terms.
+  - Baptist Memorial and Regional One Health are also worth asking. A university page suggests checking their careers pages for tuition reimbursement or discount programs.
+  - You may also qualify for free or reduced-cost training through Tennessee's WIOA workforce programs. Your local American Job Center can tell you.
+  
+  ## 3. Move to a hospital if you're in a nursing home or home health
+  One local training-school source says hospital systems pay Memphis CNAs the most, with wages 15–25% above nursing-home rates. It reports Methodist CNAs earning roughly $19–$24/hour with shift differentials. That's a school's marketing page, so treat the numbers as approximate. Even so, $19/hr would be about $4,000 more a year than you make now.
+  
+  ## 4. Raise your pay as a CNA while you study
+  - Work nights, weekends, or PRN shifts. Shift differentials and per-diem pay can add up quickly.
+  - Look for specialty units such as ICU, dialysis, or behavioral health, or for CNA II/Med Tech roles. These often pay more.
+  - Ask for a raise or review. After 1.5 years you have a case, especially with good attendance and evaluations.
+  
+  ## 5. Longer term: RN
+  Many LPNs later move on to RN through a bridge program, often with employer help. That is where pay grows most over a career. You don't have to decide now, but picking a path with a bridge program keeps the option open.
+  
+  ## A practical plan
+  1. This month, ask HR what tuition assistance exists for your current employer. Also compare it with Methodist, Baptist, and Regional One.
+  2. Look into LPN prerequisites and the application deadlines at two or three local programs.
+  3. Fill out the FAFSA. It's free, and you may qualify for Pell Grants.
+  4. In the meantime, pick up extra shifts or move to a higher-paying employer.
+  
+  If you tell me more, I can tailor this. It would help to know your current workplace (hospital, nursing home or home health), your schedule, whether you have dependents, and whether you want to keep working while in school.
+
+  Sources:
+    - Lpn Salary in Memphis, TN: Hourly Rate (September, 2026) — https://www.ziprecruiter.com/Salaries/Lpn-Salary-in-Memphis,TN
+    - Licensed practical nurse salary in Memphis, TN — https://www.indeed.com/career/licensed-practical-nurse/salaries/Memphis--TN
+    - Salary: Lpn Licensed Practical Nurse in Memphis, TN 2026 — https://www.glassdoor.com/Salaries/memphis-lpn-licensed-practical-nurse-salary-SRCH_IL.0,7_IC1144463_KO8,36.htm
+    - Top Nursing Schools in Memphis, TN for 2025 — https://allnurses.com/programs/nursing-schools-memphis-tennessee-r109/
+    - Nursing Schools in Memphis, TN — https://www.nursingschools.com/schools/tennessee/memphis/
+    - Learning and Development — http://www.methodisthealth.org/careers/what-we-offer/learning-development
+    - Careers - Recruitment - LPN 2 - Methodist Le Bonheur Healthcare — https://www.methodisthealth.org/articles/careers-recruitment-lpn-2
+    - University of Memphis BSN, MSN, AGACNP & Nurse Educator — https://www.nursingschools.com/schools/tennessee/memphis/university-of-memphis
+    - Memphis CNA Salary 2026: Pay by Employer — https://careeracademymemphis.com/cna-salary-memphis
+
+  ── ChatGPT (gpt-5.4-2026-03-05, web search on, 31.2 s) ────────────────────
+  Given your situation, I’d think about this in **3 levels: quick raise, medium-term move, and biggest long-term payoff**.
+  
+  ## First: you’re not badly paid for Memphis CNA work
+  You make **$35,600/year**, which is a bit above some local/state CNA averages. Recent sources put Memphis nursing assistant pay around **$16.72/hour** and Memphis CNA pay around **$32.8k/year** on average, while Tennessee CNA averages are around **$33.7k/year**. ([indeed.com](https://www.indeed.com/career/nursing-assistant/salaries/Memphis--TN?utm_source=openai))
+  
+  So if you want meaningfully more income, the biggest gains probably won’t come from just “working harder” in the same role. They’ll come from **changing employer, shift, setting, credentials, or career level**. ([indeed.com](https://www.indeed.com/career/nursing-assistant/salaries/Memphis--TN?utm_source=openai))
+  
+  ## Best options, in order
+  
+  ### 1) Change employers before changing careers
+  With 1.5 years of experience, you may be able to get a better-paying CNA/PCT role without going back to school immediately. In Memphis, some postings are higher for **weekends, nights, overtime, agency, rehab, hospital, and specialty care** roles, and Indeed also shows some employers/postings well above average. ([indeed.com](https://www.indeed.com/career/nursing-assistant/salaries/Memphis--TN?utm_source=openai))
+  
+  **What I’d do now:**
+  - Apply to **hospital-based tech/PCT/CNA roles**
+  - Target **night shift or weekend Baylor-style schedules**
+  - Look at **rehab, memory care, dialysis, float pool, hospice, or agency staffing**
+  - Ask directly: “What is your shift differential? Weekend differential? Overtime availability?”
+  
+  If you do this well, you may raise pay **without school debt**.
+  
+  ### 2) Become an LPN if you want the best pay bump per time invested
+  This is probably the **best return on effort** if you want more money relatively soon. Tennessee LPN pay is around **$53.6k/year** on average as of November 1, 2026. That is a large jump from your current **$35.6k**. ([salary.com](https://www.salary.com/research/salary/benchmark/licensed-practical-nurse-salary/tn?utm_source=openai))
+  
+  That’s roughly an increase of about:
+  - **$18,000 more per year**
+  - about **50% higher** than your current pay
+  
+  For many nursing assistants, **LPN is the fastest strong income upgrade**.
+  
+  ### 3) RN is the stronger long-term path
+  RN usually beats LPN over time, especially with hospital experience, specialties, and overtime. I wasn’t able to verify a Memphis-specific RN figure from a strong primary source in this quick search, but Tennessee RN/ADN salaries are generally materially above LPN wages, often making RN the better long-term move. This is an inference based on salary ladders and nursing labor markets, not a Memphis-specific verified figure from the sources above. ([salary.com](https://www.salary.com/research/salary/benchmark/licensed-practical-nurse-salary/tn?utm_source=openai))
+  
+  If you can handle more schooling, **RN > LPN** for lifetime earnings. If you want faster payoff, **LPN first** is very attractive.
+  
+  ## My honest advice for you
+  If I were advising you personally, I’d say:
+  
+  - **If you need more money in the next 1–6 months:**  
+    **Switch employers/settings first** and chase differentials.
+  
+  - **If you want a serious pay increase in 12–24 months:**  
+    **Go for LPN.**
+  
+  - **If you can tolerate a longer climb for bigger upside:**  
+    **Plan for RN**, even if you do LPN first.
+  
+  ## A practical plan for the next 90 days
+  
+  ### Option A: maximize income without school right now
+  1. Update your resume
+  2. Apply to **20+ CNA/PCT roles**
+  3. Prioritize:
+     - hospitals
+     - agency/per-diem
+     - nights
+     - weekends
+     - rehab/skilled nursing with differential
+  4. Don’t reveal your current pay early
+  5. Ask for:
+     - base rate
+     - differential
+     - overtime rules
+     - sign-on bonus
+     - tuition assistance
+  
+  ### Option B: start moving toward LPN
+  1. Research **local Memphis-area LPN programs**
+  2. Compare:
+     - tuition
+     - schedule
+     - NCLEX-PN pass rates
+     - job placement
+     - whether employer tuition help is available
+  3. Keep working while completing prerequisites if needed
+  4. Target graduation into:
+     - long-term care management-track roles
+     - clinic roles
+     - hospital LPN roles where available
+  
+  ## What I would not recommend
+  I would **not** recommend staying in the same CNA job hoping for small annual raises to solve the problem. Your current pay is already near or above some local averages, so the biggest improvement likely requires a **change**, not patience. ([indeed.com](https://www.indeed.com/career/nursing-assistant/salaries/Memphis--TN?utm_source=openai))
+  
+  ## Bottom line
+  **Best immediate move:** get a better-paying CNA/PCT job with shift differentials.  
+  **Best near-term move:** become an **LPN**.  
+  **Best lifetime earnings move:** become an **RN**.
+  
+  If you want, I can help you build a **Memphis-specific step-by-step plan** with:
+  1. the fastest route to more pay,  
+  2. local job types to target, and  
+  3. a simple comparison of **CNA vs LPN vs RN** in time, cost, and income.
+
+  Sources:
+    - Nursing assistant salary in Memphis, TN — https://www.indeed.com/career/nursing-assistant/salaries/Memphis--TN?utm_source=openai
+    - Licensed Practical Nurse Salary in Tennessee (November 01, 2026) | Salary.com — https://www.salary.com/research/salary/benchmark/licensed-practical-nurse-salary/tn?utm_source=openai

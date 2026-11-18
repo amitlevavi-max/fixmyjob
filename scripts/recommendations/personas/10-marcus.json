@@ -1,0 +1,31 @@
+{
+  "persona": "Marcus Ramirez",
+  "llmJob": "delivery driver",
+  "goal": "claim_rights",
+  "soc": "53-3033",
+  "monthsInJob": 48,
+  "annualPay": 34500,
+  "location": {
+    "state": "IA",
+    "metro": "Des Moines"
+  },
+  "zip": "50309",
+  "workSchedule": {
+    "hoursPerWeek": 45,
+    "daysPerWeek": 5,
+    "weekendHoursPerWeek": 0,
+    "overtimeMultiplier": 1.5,
+    "weekendPremiumPct": 0
+  },
+  "rightsAnswers": {
+    "payUnit": "job",
+    "workType": "1099",
+    "shifts": [
+      "over8"
+    ],
+    "concerns": [
+      "misclassified"
+    ]
+  },
+  "details": true
+}

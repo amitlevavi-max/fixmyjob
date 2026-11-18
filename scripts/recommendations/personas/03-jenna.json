@@ -1,0 +1,14 @@
+{
+  "persona": "Jenna Johnson",
+  "llmJob": "stocker",
+  "goal": "earn_more",
+  "soc": "53-7065",
+  "monthsInJob": 48,
+  "annualPay": 35100,
+  "location": {
+    "state": "MI",
+    "metro": "Grand Rapids"
+  },
+  "zip": "49503",
+  "details": true
+}

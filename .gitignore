@@ -1,0 +1,25 @@
+
+# Large raw datasets (ETA-9171 etc.) — imported into Supabase, not committed
+data/etp/
+Data/etp/
+
+# Expo local state
+.expo/
+node_modules/
+
+# Native folders are generated from app.json (npx expo prebuild) — don't hand-edit
+android/
+ios/
+
+# Local revert points and scratch files — kept on disk, not in Git
+_backup/
+
+# Build outputs
+*.apk
+*.aab
+
+# API keys for the recommendations tool's --llms comparison
+scripts/recommendations/.env.llm
+
+# Raw downloads (ACS, MEPS, Credential Engine export) — imported into Supabase; re-download with scripts/
+Data/

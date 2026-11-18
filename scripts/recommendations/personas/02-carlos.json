@@ -1,0 +1,14 @@
+{
+  "persona": "Carlos Brooks",
+  "llmJob": "warehouse worker",
+  "goal": "earn_more",
+  "soc": "53-7062",
+  "monthsInJob": 36,
+  "annualPay": 35400,
+  "location": {
+    "state": "NY",
+    "metro": "Buffalo"
+  },
+  "zip": "14201",
+  "details": true
+}

@@ -1,0 +1,14 @@
+{
+  "persona": "Luis Hayes",
+  "llmJob": "nursing assistant",
+  "goal": "earn_more",
+  "soc": "31-1131",
+  "monthsInJob": 18,
+  "annualPay": 35600,
+  "location": {
+    "state": "TN",
+    "metro": "Memphis"
+  },
+  "zip": "38103",
+  "details": true
+}

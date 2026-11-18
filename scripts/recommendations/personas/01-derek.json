@@ -1,0 +1,33 @@
+{
+  "persona": "Derek Reed",
+  "llmJob": "home health aide",
+  "goal": "claim_rights",
+  "soc": "31-1120",
+  "monthsInJob": 84,
+  "annualPay": 32200,
+  "location": {
+    "state": "CT",
+    "metro": "Hartford"
+  },
+  "zip": "06106",
+  "hourlyRate": 15.48,
+  "workSchedule": {
+    "hoursPerWeek": 40,
+    "daysPerWeek": 5,
+    "weekendHoursPerWeek": 0,
+    "overtimeMultiplier": 1.5,
+    "weekendPremiumPct": 0
+  },
+  "rightsAnswers": {
+    "payUnit": "hour",
+    "workType": "w2",
+    "shifts": [
+      "weekends",
+      "split"
+    ],
+    "concerns": [
+      "unpaidHours"
+    ]
+  },
+  "details": true
+}

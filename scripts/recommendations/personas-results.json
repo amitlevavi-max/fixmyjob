@@ -1,0 +1,4496 @@
+[
+  {
+    "file": "01-derek",
+    "input": {
+      "persona": "Derek Reed",
+      "goal": "claim_rights",
+      "soc": "31-1120",
+      "monthsInJob": 84,
+      "annualPay": 32200,
+      "location": {
+        "state": "CT",
+        "metro": "Hartford"
+      },
+      "zip": "06106",
+      "hourlyRate": 15.48,
+      "workSchedule": {
+        "hoursPerWeek": 40,
+        "daysPerWeek": 5,
+        "weekendHoursPerWeek": 0,
+        "overtimeMultiplier": 1.5,
+        "weekendPremiumPct": 0
+      },
+      "rightsAnswers": {
+        "payUnit": "hour",
+        "workType": "w2",
+        "shifts": [
+          "weekends",
+          "split"
+        ],
+        "concerns": [
+          "unpaidHours"
+        ]
+      },
+      "details": true
+    },
+    "profile": {
+      "goals": [
+        "claim_rights"
+      ],
+      "occupation": {
+        "soc": "31-1120",
+        "title": "Home Health and Personal Care Aides"
+      },
+      "occupationMatch": "given soc",
+      "role": "Home Health and Personal Care Aides",
+      "monthsInJob": 84,
+      "annualPay": 32200,
+      "location": "Hartford, CT",
+      "zip": "06106",
+      "employer": null,
+      "language": "en"
+    },
+    "buckets": [
+      {
+        "effort": "quick",
+        "title": "Quick wins",
+        "sub": "A few hours of your time",
+        "items": [
+          {
+            "id": "right:minimum_wage",
+            "title": "Get paid the minimum wage",
+            "gainAmount": 3040,
+            "gain": "About $3,040 a year. You’re paid $15.48/hr — the legal minimum in Connecticut is $16.94/hr.",
+            "source": "State and federal labor law · your answers",
+            "kind": "pay_fix",
+            "moveType": null,
+            "forYourGoals": [
+              "claim_rights"
+            ],
+            "goals": [
+              "claim_rights",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "$16.94/hr in Connecticut",
+            "steps": [
+              {
+                "title": "Collect your records",
+                "detail": "Pay stubs, schedules, texts, and your own notes of the hours you worked."
+              },
+              {
+                "title": "Ask your employer in writing",
+                "detail": "Keep it short and polite, and keep a copy. Asking about your pay is protected by law."
+              },
+              {
+                "title": "File a free wage claim",
+                "detail": "With the US Dept. of Labor or your state labor office — links below. Back pay can usually be claimed for 2 years (3 if willful)."
+              },
+              {
+                "title": "Talk to a lawyer",
+                "detail": "Many wage lawyers charge nothing unless they win."
+              }
+            ]
+          },
+          {
+            "id": "union-membership",
+            "title": "Join SEIU",
+            "gainAmount": 4400,
+            "gain": "Union healthcare support workers earn 14% more than non-union healthcare support workers (median weekly pay)",
+            "source": "US Bureau of Labor Statistics, 2025 data",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "claim_rights"
+            ],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "Collective bargaining + legal protection",
+            "steps": [
+              {
+                "title": "Check if you're already covered",
+                "detail": "Ask co-workers or HR, or look for union dues on a co-worker's pay stub. If there's a contract, ask for the shop steward."
+              },
+              {
+                "title": "Contact the union for your work",
+                "detail": "Use the links below to reach the union that represents your field. Dues vary by local — ask before you sign up."
+              },
+              {
+                "title": "No union yet? Organize",
+                "detail": "With signed cards from at least 30% of co-workers, you can petition the NLRB for a union election. A union organizer can guide you through it."
+              }
+            ]
+          },
+          {
+            "id": "right:premium",
+            "title": "Ask for night or weekend extra pay",
+            "gainAmount": 0,
+            "gain": "No law in Connecticut requires extra pay for nights or weekends — but you can ask, and a union contract can require it.",
+            "source": null,
+            "kind": "pay_fix",
+            "moveType": null,
+            "forYourGoals": [
+              "claim_rights"
+            ],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "",
+            "steps": [
+              {
+                "title": "Ask co-workers what they get",
+                "detail": "Find out if anyone gets extra pay for nights or weekends."
+              },
+              {
+                "title": "Ask your manager in writing",
+                "detail": "Ask whether there’s a night or weekend differential, and keep a copy."
+              },
+              {
+                "title": "Check a union contract",
+                "detail": "If you’re covered by one, it may require extra pay."
+              }
+            ]
+          },
+          {
+            "id": "right:unpaid_time",
+            "title": "Check for unpaid work time",
+            "gainAmount": 0,
+            "gain": "Time you’re required to spend at work counts as paid time — security checks, putting on gear, waiting, required training.",
+            "source": null,
+            "kind": "pay_fix",
+            "moveType": null,
+            "forYourGoals": [
+              "claim_rights"
+            ],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "",
+            "steps": [
+              {
+                "title": "Answer the questions above",
+                "detail": "Each answer is saved, so you won’t be asked again."
+              },
+              {
+                "title": "Keep a record of your hours",
+                "detail": "Write down when you start, stop and take breaks. It’s your evidence if you need it."
+              }
+            ]
+          },
+          {
+            "id": "right:meal_breaks",
+            "title": "Check your meal breaks",
+            "gainAmount": 0,
+            "gain": "Connecticut: 30-minute meal break on shifts of 7.5 hours or more.",
+            "source": null,
+            "kind": "pay_fix",
+            "moveType": null,
+            "forYourGoals": [
+              "claim_rights"
+            ],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "30-minute meal break on shifts of 7.5 hours or more",
+            "steps": [
+              {
+                "title": "Answer the questions above",
+                "detail": "Each answer is saved, so you won’t be asked again."
+              },
+              {
+                "title": "Keep a record of your hours",
+                "detail": "Write down when you start, stop and take breaks. It’s your evidence if you need it."
+              }
+            ]
+          },
+          {
+            "id": "right:sick_leave",
+            "title": "Check your paid sick leave",
+            "gainAmount": 0,
+            "gain": "Connecticut: 1 hr per 30 worked — up to 40 hrs/yr (employers with 11+ staff; all employers from January 2027).",
+            "source": null,
+            "kind": "pay_fix",
+            "moveType": null,
+            "forYourGoals": [
+              "claim_rights"
+            ],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "1 hr per 30 worked — up to 40 hrs/yr (employers with 11+ staff; all employers from January 2027)",
+            "steps": [
+              {
+                "title": "Answer the questions above",
+                "detail": "Each answer is saved, so you won’t be asked again."
+              },
+              {
+                "title": "Keep a record of your hours",
+                "detail": "Write down when you start, stop and take breaks. It’s your evidence if you need it."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "effort",
+        "title": "Worth the effort",
+        "sub": "Weeks or months of training",
+        "items": [
+          {
+            "id": "move:promotion:29-2043",
+            "title": "Move up to paramedic",
+            "gainAmount": 45300,
+            "gain": "Typical pay for paramedics in Connecticut is $77,480/yr — $45,300 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "unknown",
+            "forYourGoals": [],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job that needs more experience or training than yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Operation and Control, Instructing, Complex Problem Solving",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to paramedic and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:29-2061",
+            "title": "Move up to practical nurse",
+            "gainAmount": 41500,
+            "gain": "Typical pay for practical nurses in Connecticut is $73,690/yr — $41,500 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "unknown",
+            "forYourGoals": [],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job that needs more experience or training than yours (O*NET). Required for this job: Practical / vocational nurse license (NCLEX-PN).",
+            "steps": [
+              {
+                "title": "Take college courses",
+                "detail": "38% of practical nurses say the job needs some college courses (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Get Practical / vocational nurse license (NCLEX-PN)",
+                "detail": "Every state; issued by the state board of nursing Issued by: State board of nursing."
+              },
+              {
+                "title": "Build these skills: Social Perceptiveness, Systems Analysis, Coordination",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to practical nurse and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:change:31-9092",
+            "title": "Switch to medical assistant",
+            "gainAmount": 15200,
+            "gain": "Typical pay for medical assistants in Connecticut is $47,430/yr — $15,200 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get a post-secondary certificate",
+                "detail": "45% of medical assistants say the job needs a post-secondary certificate (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Social Perceptiveness",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for medical assistant",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "big",
+        "title": "Big moves",
+        "sub": "A degree or a move to a new city",
+        "items": [
+          {
+            "id": "move:promotion:31-2021",
+            "title": "Move up to physical therapist assistant",
+            "gainAmount": 43700,
+            "gain": "Typical pay for physical therapist assistants in Connecticut is $75,880/yr — $43,700 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "unknown",
+            "forYourGoals": [],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job that needs more experience or training than yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get an associate degree",
+                "detail": "84% of physical therapist assistants say the job needs an associate degree (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Social Perceptiveness, Instructing",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to physical therapist assistant and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:change:31-2011",
+            "title": "Switch to occupational therapy assistant",
+            "gainAmount": 40600,
+            "gain": "Typical pay for occupational therapy assistants in Connecticut is $72,780/yr — $40,600 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get an associate degree",
+                "detail": "92% of occupational therapy assistants say the job needs an associate degree (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Systems Analysis, Social Perceptiveness, Instructing",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for occupational therapy assistant",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move-high-wage",
+            "title": "Relocate to a Higher-Wage Metro",
+            "gainAmount": 23600,
+            "gain": "Typical pay for your job in Grants Pass is worth 73% more than you earn now, after living costs",
+            "source": "Fix My Job estimate, based on US Bureau of Labor Statistics and US Bureau of Economic Analysis data",
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "earn_more",
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "Same role, higher pay after living costs — compared using official wage and price data",
+            "steps": [
+              {
+                "title": "Pick 2–3 target cities",
+                "detail": "Use the list above — it compares pay after living costs, not just pay"
+              },
+              {
+                "title": "Search for jobs there",
+                "detail": "Open the job search for each city and apply before you move"
+              },
+              {
+                "title": "Ask about relocation help",
+                "detail": "Large employers (warehouses, hospitals, hotel chains) often offer sign-on or moving bonuses — ask in the interview"
+              },
+              {
+                "title": "Budget the move",
+                "detail": "Plan for a rent deposit, travel and about a month of expenses before the first paycheck"
+              }
+            ]
+          },
+          {
+            "id": "move:change:39-1022",
+            "title": "Switch to personal service supervisor",
+            "gainAmount": 20500,
+            "gain": "Typical pay for personal service supervisors in Connecticut is $52,720/yr — $20,500 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get an associate degree",
+                "detail": "48% of personal service supervisors say the job needs an associate degree (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Management of Personnel Resources, Systems Analysis, Systems Evaluation",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for personal service supervisor",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "potentialBoost": {
+      "total": 52740,
+      "parts": [
+        {
+          "label": "Get paid what the law requires",
+          "amount": 3040
+        },
+        {
+          "label": "Join SEIU",
+          "amount": 4400
+        },
+        {
+          "label": "Best career move: Move up to paramedic",
+          "amount": 45300,
+          "note": "other career moves are alternatives, so only the best counts"
+        }
+      ]
+    },
+    "counts": {
+      "suggested": 13,
+      "inPlan": 0,
+      "toReview": 13,
+      "notForMe": 0,
+      "done": 0
+    },
+    "minimumWageShortfall": 3040,
+    "meta": {
+      "ms": 30392
+    }
+  },
+  {
+    "file": "02-carlos",
+    "input": {
+      "persona": "Carlos Brooks",
+      "goal": "earn_more",
+      "soc": "53-7062",
+      "monthsInJob": 36,
+      "annualPay": 35400,
+      "location": {
+        "state": "NY",
+        "metro": "Buffalo"
+      },
+      "zip": "14201",
+      "details": true
+    },
+    "profile": {
+      "goals": [
+        "earn_more"
+      ],
+      "occupation": {
+        "soc": "53-7062",
+        "title": "Laborers and Freight, Stock, and Material Movers, Hand"
+      },
+      "occupationMatch": "given soc",
+      "role": "Laborers and Freight, Stock, and Material Movers, Hand",
+      "monthsInJob": 36,
+      "annualPay": 35400,
+      "location": "Buffalo, NY",
+      "zip": "14201",
+      "employer": null,
+      "language": "en"
+    },
+    "buckets": [
+      {
+        "effort": "quick",
+        "title": "Quick wins",
+        "sub": "A few hours of your time",
+        "items": [
+          {
+            "id": "course:2eb54b5252ecdba8",
+            "title": "Take a short course: Small Engine Repair",
+            "gainAmount": 0,
+            "gain": "About 24 hours, online · MIDDLE BUCKS INSTITUTE OF",
+            "source": "US Dept. of Labor",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A first step toward the maintenance worker job. The course is on the US Department of Labor list of approved training programs.",
+            "steps": [
+              {
+                "title": "Check that the certificate is accepted in New York",
+                "detail": "This course is approved in Pennsylvania. Before you sign up or pay, call or email MIDDLE BUCKS INSTITUTE OF and ask: \"Is this certificate recognized by employers and by the state licensing or certification board in New York?\" Some certificates are only valid in the state that approved the course."
+              },
+              {
+                "title": "Sign up with MIDDLE BUCKS INSTITUTE OF",
+                "detail": "Online course, about 24 hours in total. Listed cost: $250. You get: Small Engine Repair Certificate of Completion."
+              },
+              {
+                "title": "Finish the course and keep your certificate",
+                "detail": "Save a copy of the certificate on your phone."
+              },
+              {
+                "title": "Tell your manager and add it to your resume",
+                "detail": "New skills count when you ask for a raise or apply for a better job."
+              }
+            ],
+            "course": {
+              "from": "DOL approved training programs",
+              "provider": "MIDDLE BUCKS INSTITUTE OF",
+              "name": "Small Engine Repair",
+              "format": "online",
+              "location": "2740 YORK RD JAMISON, PA 18929",
+              "distanceMi": 268.7,
+              "length": "about 24 hours over 8 week(s)",
+              "price": "$250",
+              "credential": "Small Engine Repair Certificate of Completion",
+              "url": null,
+              "phone": null,
+              "email": null,
+              "results": {
+                "finished": null,
+                "completionRate": null,
+                "employed6mo": null,
+                "yearlyPayAfter": null,
+                "credentialRate": null,
+                "reported": "2023-08-09"
+              }
+            }
+          },
+          {
+            "id": "union-membership",
+            "title": "Join the Teamsters",
+            "gainAmount": 12600,
+            "gain": "Union transportation & warehouse workers earn 36% more than non-union transportation & warehouse workers (median weekly pay)",
+            "source": "US Bureau of Labor Statistics, 2025 data",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "Collective bargaining + legal protection",
+            "steps": [
+              {
+                "title": "Check if you're already covered",
+                "detail": "Ask co-workers or HR, or look for union dues on a co-worker's pay stub. If there's a contract, ask for the shop steward."
+              },
+              {
+                "title": "Contact the union for your work",
+                "detail": "Use the links below to reach the union that represents your field. Dues vary by local — ask before you sign up."
+              },
+              {
+                "title": "No union yet? Organize",
+                "detail": "With signed cards from at least 30% of co-workers, you can petition the NLRB for a union election. A union organizer can guide you through it."
+              }
+            ]
+          },
+          {
+            "id": "osha-10-cert",
+            "title": "Get OSHA 10 Certification",
+            "gainAmount": 0,
+            "gain": "A safety credential that helps with promotions",
+            "source": null,
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "rise_up"
+            ],
+            "status": "to_review",
+            "note": "Fast path to team lead and supervisory roles",
+            "steps": [
+              {
+                "title": "Take the OSHA 10-Hour course",
+                "detail": "Online via an OSHA-authorized training provider"
+              },
+              {
+                "title": "Ask employer to reimburse",
+                "detail": "Most safety-conscious employers cover OSHA training costs"
+              },
+              {
+                "title": "Add it to your resume",
+                "detail": "OSHA card is recognized nationwide and boosts promotion applications"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "effort",
+        "title": "Worth the effort",
+        "sub": "Weeks or months of training",
+        "items": [
+          {
+            "id": "move:promotion:53-7041",
+            "title": "Move up to hoist and winch operator",
+            "gainAmount": 39600,
+            "gain": "Typical pay for hoist and winch operators in New York is $74,980/yr — $39,600 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "unknown",
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job (O*NET) that pays at least 20% more than yours.",
+            "steps": [
+              {
+                "title": "Build these skills: Coordination, Time Management, Instructing",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to hoist and winch operator and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:49-9043",
+            "title": "Move up to maintenance worker",
+            "gainAmount": 32200,
+            "gain": "Typical pay for maintenance workers in New York is $67,610/yr — $32,200 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "unknown",
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job that needs more experience or training than yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get a post-secondary certificate",
+                "detail": "54% of maintenance workers say the job needs a post-secondary certificate (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Repairing, Equipment Maintenance, Troubleshooting",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to maintenance worker and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:53-1047",
+            "title": "Move up to transportation and material moving supervisor",
+            "gainAmount": 31900,
+            "gain": "Typical pay for transportation and material moving supervisors in New York is $67,300/yr — $31,900 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up (manager)",
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "The supervisor job for your line of work.",
+            "steps": [
+              {
+                "title": "Build these skills: Management of Personnel Resources, Time Management, Social Perceptiveness",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to transportation and material moving supervisor and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:change:53-7021",
+            "title": "Switch to crane and tower operator",
+            "gainAmount": 50500,
+            "gain": "Typical pay for crane and tower operators in New York is $85,850/yr — $50,500 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get a post-secondary certificate",
+                "detail": "61% of crane and tower operators say the job needs a post-secondary certificate (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Operation and Control, Time Management, Operations Monitoring",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for crane and tower operator",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:change:51-9021",
+            "title": "Switch to crushing",
+            "gainAmount": 22700,
+            "gain": "Typical pay for crushing in New York is $58,090/yr — $22,700 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Operations Monitoring, Operation and Control, Quality Control Analysis",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for crushing",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:change:47-2061",
+            "title": "Switch to construction laborer",
+            "gainAmount": 20500,
+            "gain": "Typical pay for construction laborers in New York is $55,930/yr — $20,500 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Coordination, Operation and Control",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for construction laborer",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "big",
+        "title": "Big moves",
+        "sub": "A degree or a move to a new city",
+        "items": [
+          {
+            "id": "move-high-wage",
+            "title": "Relocate to a Higher-Wage Metro",
+            "gainAmount": 17600,
+            "gain": "Typical pay for your job in Topeka is worth 50% more than you earn now, after living costs",
+            "source": "Fix My Job estimate, based on US Bureau of Labor Statistics and US Bureau of Economic Analysis data",
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "earn_more",
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "Same role, higher pay after living costs — compared using official wage and price data",
+            "steps": [
+              {
+                "title": "Pick 2–3 target cities",
+                "detail": "Use the list above — it compares pay after living costs, not just pay"
+              },
+              {
+                "title": "Search for jobs there",
+                "detail": "Open the job search for each city and apply before you move"
+              },
+              {
+                "title": "Ask about relocation help",
+                "detail": "Large employers (warehouses, hospitals, hotel chains) often offer sign-on or moving bonuses — ask in the interview"
+              },
+              {
+                "title": "Budget the move",
+                "detail": "Plan for a rent deposit, travel and about a month of expenses before the first paycheck"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "potentialBoost": {
+      "total": 63100,
+      "parts": [
+        {
+          "label": "Join the Teamsters",
+          "amount": 12600
+        },
+        {
+          "label": "Best career move: Switch to crane and tower operator",
+          "amount": 50500,
+          "note": "other career moves are alternatives, so only the best counts"
+        }
+      ]
+    },
+    "counts": {
+      "suggested": 10,
+      "inPlan": 0,
+      "toReview": 10,
+      "notForMe": 0,
+      "done": 0
+    },
+    "minimumWageShortfall": 0,
+    "meta": {
+      "ms": 37526
+    }
+  },
+  {
+    "file": "03-jenna",
+    "input": {
+      "persona": "Jenna Johnson",
+      "goal": "earn_more",
+      "soc": "53-7065",
+      "monthsInJob": 48,
+      "annualPay": 35100,
+      "location": {
+        "state": "MI",
+        "metro": "Grand Rapids"
+      },
+      "zip": "49503",
+      "details": true
+    },
+    "profile": {
+      "goals": [
+        "earn_more"
+      ],
+      "occupation": {
+        "soc": "53-7065",
+        "title": "Stockers and Order Fillers"
+      },
+      "occupationMatch": "given soc",
+      "role": "Stockers and Order Fillers",
+      "monthsInJob": 48,
+      "annualPay": 35100,
+      "location": "Grand Rapids, MI",
+      "zip": "49503",
+      "employer": null,
+      "language": "en"
+    },
+    "buckets": [
+      {
+        "effort": "quick",
+        "title": "Quick wins",
+        "sub": "A few hours of your time",
+        "items": [
+          {
+            "id": "move:promotion:43-5053",
+            "title": "Move up to postal service mail sorter",
+            "gainAmount": 24400,
+            "gain": "Typical pay for postal service mail sorters in Michigan is $59,490/yr — $24,400 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "unknown",
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job (O*NET) that pays at least 20% more than yours.",
+            "steps": [
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to postal service mail sorter and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "course:ca6f4dff74dddc9b",
+            "title": "Take a short course: Solar Sales Training",
+            "gainAmount": 0,
+            "gain": "About 13 hours, online · Vegas PBS/CCSD",
+            "source": "US Dept. of Labor",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more",
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A first step toward the retail sales supervisor job. The course is on the US Department of Labor list of approved training programs.",
+            "steps": [
+              {
+                "title": "Check that the certificate is accepted in Michigan",
+                "detail": "This course is approved in Nevada. Before you sign up or pay, call or email Vegas PBS/CCSD and ask: \"Is this certificate recognized by employers and by the state licensing or certification board in Michigan?\" Some certificates are only valid in the state that approved the course.",
+                "url": "https://careertraining.ed2go.com/vegaspbs/training-programs/solar-sales-training/"
+              },
+              {
+                "title": "Sign up with Vegas PBS/CCSD",
+                "detail": "Online course, about 13 hours in total. Listed cost: $1,695. You get: Solar Sales Training.",
+                "url": "https://careertraining.ed2go.com/vegaspbs/training-programs/solar-sales-training/"
+              },
+              {
+                "title": "Finish the course and keep your certificate",
+                "detail": "Save a copy of the certificate on your phone."
+              },
+              {
+                "title": "Tell your manager and add it to your resume",
+                "detail": "New skills count when you ask for a raise or apply for a better job."
+              }
+            ],
+            "course": {
+              "from": "DOL approved training programs",
+              "provider": "Vegas PBS/CCSD",
+              "name": "Solar Sales Training",
+              "format": "online",
+              "location": "3050 E Flamingo Rd. Las Vegas, NV 89121",
+              "distanceMi": 1627.8,
+              "length": "about 13 hours over 13 week(s)",
+              "price": "$1,695",
+              "credential": "Solar Sales Training",
+              "url": "https://careertraining.ed2go.com/vegaspbs/training-programs/solar-sales-training/",
+              "phone": null,
+              "email": null,
+              "results": {
+                "finished": null,
+                "completionRate": null,
+                "employed6mo": null,
+                "yearlyPayAfter": null,
+                "credentialRate": null,
+                "reported": "2024-05-03"
+              }
+            }
+          },
+          {
+            "id": "union-membership",
+            "title": "Join UFCW",
+            "gainAmount": 12500,
+            "gain": "Union transportation & warehouse workers earn 36% more than non-union transportation & warehouse workers (median weekly pay)",
+            "source": "US Bureau of Labor Statistics, 2025 data",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "Collective bargaining + legal protection",
+            "steps": [
+              {
+                "title": "Check if you're already covered",
+                "detail": "Ask co-workers or HR, or look for union dues on a co-worker's pay stub. If there's a contract, ask for the shop steward."
+              },
+              {
+                "title": "Contact the union for your work",
+                "detail": "Use the links below to reach the union that represents your field. Dues vary by local — ask before you sign up."
+              },
+              {
+                "title": "No union yet? Organize",
+                "detail": "With signed cards from at least 30% of co-workers, you can petition the NLRB for a union election. A union organizer can guide you through it."
+              }
+            ]
+          },
+          {
+            "id": "osha-10-cert",
+            "title": "Get OSHA 10 Certification",
+            "gainAmount": 0,
+            "gain": "A safety credential that helps with promotions",
+            "source": null,
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "rise_up"
+            ],
+            "status": "to_review",
+            "note": "Fast path to team lead and supervisory roles",
+            "steps": [
+              {
+                "title": "Take the OSHA 10-Hour course",
+                "detail": "Online via an OSHA-authorized training provider"
+              },
+              {
+                "title": "Ask employer to reimburse",
+                "detail": "Most safety-conscious employers cover OSHA training costs"
+              },
+              {
+                "title": "Add it to your resume",
+                "detail": "OSHA card is recognized nationwide and boosts promotion applications"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "effort",
+        "title": "Worth the effort",
+        "sub": "Weeks or months of training",
+        "items": [
+          {
+            "id": "move:promotion:43-5051",
+            "title": "Move up to postal service clerk",
+            "gainAmount": 28600,
+            "gain": "Typical pay for postal service clerks in Michigan is $63,650/yr — $28,600 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "unknown",
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job (O*NET) that pays at least 20% more than yours.",
+            "steps": [
+              {
+                "title": "Build these skills: Service Orientation",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to postal service clerk and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:53-1047",
+            "title": "Move up to transportation and material moving supervisor",
+            "gainAmount": 25200,
+            "gain": "Typical pay for transportation and material moving supervisors in Michigan is $60,280/yr — $25,200 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up (manager)",
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "The supervisor job for your line of work.",
+            "steps": [
+              {
+                "title": "Build these skills: Management of Personnel Resources, Time Management, Persuasion",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to transportation and material moving supervisor and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:change:43-5061",
+            "title": "Switch to production",
+            "gainAmount": 26600,
+            "gain": "Typical pay for production in Michigan is $61,670/yr — $26,600 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Complex Problem Solving, Time Management, Coordination",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for production",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:change:43-3061",
+            "title": "Switch to procurement clerk",
+            "gainAmount": 14900,
+            "gain": "Typical pay for procurement clerks in Michigan is $49,980/yr — $14,900 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Complex Problem Solving, Judgment and Decision Making, Service Orientation",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for procurement clerk",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:change:41-1011",
+            "title": "Switch to retail sales supervisor",
+            "gainAmount": 11300,
+            "gain": "Typical pay for retail sales supervisors in Michigan is $46,430/yr — $11,300 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Persuasion, Negotiation, Instructing",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for retail sales supervisor",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "big",
+        "title": "Big moves",
+        "sub": "A degree or a move to a new city",
+        "items": [
+          {
+            "id": "move-high-wage",
+            "title": "Relocate to a Higher-Wage Metro",
+            "gainAmount": 11300,
+            "gain": "Typical pay for your job in Cheyenne is worth 32% more than you earn now, after living costs",
+            "source": "Fix My Job estimate, based on US Bureau of Labor Statistics and US Bureau of Economic Analysis data",
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "earn_more",
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "Same role, higher pay after living costs — compared using official wage and price data",
+            "steps": [
+              {
+                "title": "Pick 2–3 target cities",
+                "detail": "Use the list above — it compares pay after living costs, not just pay"
+              },
+              {
+                "title": "Search for jobs there",
+                "detail": "Open the job search for each city and apply before you move"
+              },
+              {
+                "title": "Ask about relocation help",
+                "detail": "Large employers (warehouses, hospitals, hotel chains) often offer sign-on or moving bonuses — ask in the interview"
+              },
+              {
+                "title": "Budget the move",
+                "detail": "Plan for a rent deposit, travel and about a month of expenses before the first paycheck"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "potentialBoost": {
+      "total": 41100,
+      "parts": [
+        {
+          "label": "Join UFCW",
+          "amount": 12500
+        },
+        {
+          "label": "Best career move: Move up to postal service clerk",
+          "amount": 28600,
+          "note": "other career moves are alternatives, so only the best counts"
+        }
+      ]
+    },
+    "counts": {
+      "suggested": 10,
+      "inPlan": 0,
+      "toReview": 10,
+      "notForMe": 0,
+      "done": 0
+    },
+    "minimumWageShortfall": 0,
+    "meta": {
+      "ms": 31094
+    }
+  },
+  {
+    "file": "04-dale",
+    "input": {
+      "persona": "Dale Davis",
+      "goal": "earn_more",
+      "soc": "37-2011",
+      "monthsInJob": 30,
+      "annualPay": 34200,
+      "location": {
+        "state": "MD",
+        "metro": "Baltimore"
+      },
+      "zip": "21201",
+      "details": true
+    },
+    "profile": {
+      "goals": [
+        "earn_more"
+      ],
+      "occupation": {
+        "soc": "37-2011",
+        "title": "Janitors and Cleaners"
+      },
+      "occupationMatch": "given soc",
+      "role": "Janitors and Cleaners",
+      "monthsInJob": 30,
+      "annualPay": 34200,
+      "location": "Baltimore, MD",
+      "zip": "21201",
+      "employer": null,
+      "language": "en"
+    },
+    "buckets": [
+      {
+        "effort": "quick",
+        "title": "Quick wins",
+        "sub": "A few hours of your time",
+        "items": [
+          {
+            "id": "course:717465e0a618da5d",
+            "title": "Take a short course: Appliance Repair Technician - Laundry Specialty",
+            "gainAmount": 0,
+            "gain": "About 24 hours, online · Nana Academy",
+            "source": "US Dept. of Labor",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A first step toward the maintenance and repair worker job. The course is on the US Department of Labor list of approved training programs.",
+            "steps": [
+              {
+                "title": "Check that the certificate is accepted in Maryland",
+                "detail": "This course is approved in Texas. Before you sign up or pay, call or email Nana Academy and ask: \"Is this certificate recognized by employers and by the state licensing or certification board in Maryland?\" Some certificates are only valid in the state that approved the course."
+              },
+              {
+                "title": "Sign up with Nana Academy",
+                "detail": "Online course, about 24 hours in total. Listed cost: $1,000."
+              },
+              {
+                "title": "Finish the course and keep your certificate",
+                "detail": "Save a copy of the certificate on your phone."
+              },
+              {
+                "title": "Tell your manager and add it to your resume",
+                "detail": "New skills count when you ask for a raise or apply for a better job."
+              }
+            ],
+            "course": {
+              "from": "DOL approved training programs",
+              "provider": "Nana Academy",
+              "name": "Appliance Repair Technician - Laundry Specialty",
+              "format": "online",
+              "location": "8868 Research Blvd. Ste 505 Austin, TX 78758",
+              "distanceMi": 1340.2,
+              "length": "about 24 hours over 2 week(s)",
+              "price": "$1,300",
+              "credential": null,
+              "url": null,
+              "phone": null,
+              "email": null,
+              "results": {
+                "finished": 15,
+                "completionRate": 1,
+                "employed6mo": 0.4667,
+                "yearlyPayAfter": 64933.56,
+                "credentialRate": null,
+                "reported": "2021-12-15"
+              }
+            }
+          },
+          {
+            "id": "union-membership",
+            "title": "Join SEIU",
+            "gainAmount": 8300,
+            "gain": "Union cleaning & maintenance workers earn 24% more than non-union cleaning & maintenance workers (median weekly pay)",
+            "source": "US Bureau of Labor Statistics, 2025 data",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "Collective bargaining + legal protection",
+            "steps": [
+              {
+                "title": "Check if you're already covered",
+                "detail": "Ask co-workers or HR, or look for union dues on a co-worker's pay stub. If there's a contract, ask for the shop steward."
+              },
+              {
+                "title": "Contact the union for your work",
+                "detail": "Use the links below to reach the union that represents your field. Dues vary by local — ask before you sign up."
+              },
+              {
+                "title": "No union yet? Organize",
+                "detail": "With signed cards from at least 30% of co-workers, you can petition the NLRB for a union election. A union organizer can guide you through it."
+              }
+            ]
+          },
+          {
+            "id": "osha-10-cert",
+            "title": "Get OSHA 10 Certification",
+            "gainAmount": 0,
+            "gain": "A safety credential that helps with promotions",
+            "source": null,
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "rise_up"
+            ],
+            "status": "to_review",
+            "note": "Fast path to team lead and supervisory roles",
+            "steps": [
+              {
+                "title": "Take the OSHA 10-Hour course",
+                "detail": "Online via an OSHA-authorized training provider"
+              },
+              {
+                "title": "Ask employer to reimburse",
+                "detail": "Most safety-conscious employers cover OSHA training costs"
+              },
+              {
+                "title": "Add it to your resume",
+                "detail": "OSHA card is recognized nationwide and boosts promotion applications"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "effort",
+        "title": "Worth the effort",
+        "sub": "Weeks or months of training",
+        "items": [
+          {
+            "id": "move:promotion:49-9071",
+            "title": "Move up to maintenance and repair worker",
+            "gainAmount": 17300,
+            "gain": "Typical pay for maintenance and repair workers in Maryland is $51,490/yr — $17,300 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "unknown",
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job (O*NET) that pays at least 20% more than yours.",
+            "steps": [
+              {
+                "title": "Get a post-secondary certificate",
+                "detail": "63% of maintenance and repair workers say the job needs a post-secondary certificate (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Installation, Repairing, Equipment Maintenance",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to maintenance and repair worker and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:37-1011",
+            "title": "Move up to housekeeping and janitorial supervisor",
+            "gainAmount": 15400,
+            "gain": "Typical pay for housekeeping and janitorial supervisors in Maryland is $49,550/yr — $15,400 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up (manager)",
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "The supervisor job for your line of work.",
+            "steps": [
+              {
+                "title": "Build these skills: Management of Personnel Resources, Instructing, Time Management",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to housekeeping and janitorial supervisor and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:change:51-8031",
+            "title": "Switch to water and wastewater treatment plant and system operator",
+            "gainAmount": 27700,
+            "gain": "Typical pay for water and wastewater treatment plant and system operators in Maryland is $61,870/yr — $27,700 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Operations Monitoring, Operation and Control, Quality Control Analysis",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for water and wastewater treatment plant and system operator",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:change:47-2041",
+            "title": "Switch to carpet installer",
+            "gainAmount": 22800,
+            "gain": "Typical pay for carpet installers in Maryland is $57,030/yr — $22,800 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Quality Control Analysis, Coordination",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for carpet installer",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:change:47-4071",
+            "title": "Switch to septic tank servicer",
+            "gainAmount": 22200,
+            "gain": "Typical pay for septic tank servicers in Maryland is $56,410/yr — $22,200 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Operation and Control, Repairing, Quality Control Analysis",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for septic tank servicer",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "big",
+        "title": "Big moves",
+        "sub": "A degree or a move to a new city",
+        "items": [
+          {
+            "id": "move-high-wage",
+            "title": "Relocate to a Higher-Wage Metro",
+            "gainAmount": 16500,
+            "gain": "Typical pay for your job in Rochester is worth 48% more than you earn now, after living costs",
+            "source": "Fix My Job estimate, based on US Bureau of Labor Statistics and US Bureau of Economic Analysis data",
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "earn_more",
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "Same role, higher pay after living costs — compared using official wage and price data",
+            "steps": [
+              {
+                "title": "Pick 2–3 target cities",
+                "detail": "Use the list above — it compares pay after living costs, not just pay"
+              },
+              {
+                "title": "Search for jobs there",
+                "detail": "Open the job search for each city and apply before you move"
+              },
+              {
+                "title": "Ask about relocation help",
+                "detail": "Large employers (warehouses, hospitals, hotel chains) often offer sign-on or moving bonuses — ask in the interview"
+              },
+              {
+                "title": "Budget the move",
+                "detail": "Plan for a rent deposit, travel and about a month of expenses before the first paycheck"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "potentialBoost": {
+      "total": 36000,
+      "parts": [
+        {
+          "label": "Join SEIU",
+          "amount": 8300
+        },
+        {
+          "label": "Best career move: Switch to water and wastewater treatment plant and system operator",
+          "amount": 27700,
+          "note": "other career moves are alternatives, so only the best counts"
+        }
+      ]
+    },
+    "counts": {
+      "suggested": 9,
+      "inPlan": 0,
+      "toReview": 9,
+      "notForMe": 0,
+      "done": 0
+    },
+    "minimumWageShortfall": 0,
+    "meta": {
+      "ms": 38479
+    }
+  },
+  {
+    "file": "05-tanya",
+    "input": {
+      "persona": "Tanya Fisher",
+      "goal": "rise_up",
+      "soc": "53-3032",
+      "monthsInJob": 36,
+      "annualPay": 55500,
+      "location": {
+        "state": "OR",
+        "metro": "Salem"
+      },
+      "zip": "97301",
+      "details": true
+    },
+    "profile": {
+      "goals": [
+        "rise_up"
+      ],
+      "occupation": {
+        "soc": "53-3032",
+        "title": "Heavy and Tractor-Trailer Truck Drivers"
+      },
+      "occupationMatch": "given soc",
+      "role": "Heavy and Tractor-Trailer Truck Drivers",
+      "monthsInJob": 36,
+      "annualPay": 55500,
+      "location": "Salem, OR",
+      "zip": "97301",
+      "employer": null,
+      "language": "en"
+    },
+    "buckets": [
+      {
+        "effort": "quick",
+        "title": "Quick wins",
+        "sub": "A few hours of your time",
+        "items": [
+          {
+            "id": "course:web:clicksafety-osha-10-hour-general-industry-training",
+            "title": "Take a short course: OSHA 10-Hour General Industry Training",
+            "gainAmount": 0,
+            "gain": "10 hours · online · ClickSafety",
+            "source": "Found by web search on 10/27/2026",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "This nationally recognized OSHA safety certification helps truck drivers demonstrate workplace safety knowledge needed for supervisor positions in transportation and material moving. This course is not on the US Department of Labor list of approved training programs — it was found by a web search.",
+            "steps": [
+              {
+                "title": "Check the details with ClickSafety",
+                "detail": "Before you sign up or pay, call or email them and confirm the price, the dates, and that the certificate is recognized by employers in Oregon.",
+                "url": "https://www.clicksafety.com/osha-10-hour-general-industry"
+              },
+              {
+                "title": "Sign up with ClickSafety",
+                "detail": "Online course: 10 hours. Listed price: $59.00. You get: DOL/OSHA 10-Hour Card.",
+                "url": "https://www.clicksafety.com/osha-10-hour-general-industry"
+              },
+              {
+                "title": "Finish the course and keep your certificate",
+                "detail": "Save a copy of the certificate on your phone."
+              },
+              {
+                "title": "Tell your manager and add it to your resume",
+                "detail": "New skills count when you ask for a raise or apply for a better job."
+              }
+            ],
+            "course": {
+              "from": "web search",
+              "foundAt": "2026-10-27T00:34:05.856Z",
+              "provider": "ClickSafety",
+              "name": "OSHA 10-Hour General Industry Training",
+              "format": "online",
+              "location": "Online",
+              "length": "10 hours",
+              "price": "$59.00",
+              "priceSource": "https://www.clicksafety.com/osha-10-hour-general-industry",
+              "credential": "DOL/OSHA 10-Hour Card",
+              "url": "https://www.clicksafety.com/osha-10-hour-general-industry",
+              "phone": null,
+              "email": null,
+              "sources": {
+                "price": "https://www.clicksafety.com/osha-10-hour-general-industry"
+              },
+              "results": null
+            }
+          },
+          {
+            "id": "union-membership",
+            "title": "Join the Teamsters",
+            "gainAmount": 19800,
+            "gain": "Union transportation & warehouse workers earn 36% more than non-union transportation & warehouse workers (median weekly pay)",
+            "source": "US Bureau of Labor Statistics, 2025 data",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "Collective bargaining + legal protection",
+            "steps": [
+              {
+                "title": "Check if you're already covered",
+                "detail": "Ask co-workers or HR, or look for union dues on a co-worker's pay stub. If there's a contract, ask for the shop steward."
+              },
+              {
+                "title": "Contact the union for your work",
+                "detail": "Use the links below to reach the union that represents your field. Dues vary by local — ask before you sign up."
+              },
+              {
+                "title": "No union yet? Organize",
+                "detail": "With signed cards from at least 30% of co-workers, you can petition the NLRB for a union election. A union organizer can guide you through it."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "effort",
+        "title": "Worth the effort",
+        "sub": "Weeks or months of training",
+        "items": [
+          {
+            "id": "cred:commercial-driver-s-license-cdl-class-a",
+            "title": "Get Commercial Driver's License (CDL) Class A",
+            "gainAmount": 12500,
+            "gain": "Full-time truck drivers with a certification or license typically earn $11,700–$14,300 more a year than those without (median pay)",
+            "source": "Fix My Job estimate, based on US Census Bureau data (2024-08 to 2026-08)",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "earn_more",
+              "rise_up"
+            ],
+            "status": "to_review",
+            "note": "If you don't have it yet: To drive combination vehicles over 26,000 lb (49 CFR 383). Issued by: State DMV under FMCSA rules.",
+            "steps": [
+              {
+                "title": "Check the rules for your state",
+                "detail": "The official page lists who needs the license and how to get it: https://www.fmcsa.dot.gov/registration/commercial-drivers-license"
+              },
+              {
+                "title": "Find an approved program",
+                "detail": "The programs below are approved by your state and report their results to the U.S. Dept. of Labor."
+              },
+              {
+                "title": "Ask who can pay",
+                "detail": "Your employer, or your local American Job Center (federal WIOA funds), may cover the cost."
+              },
+              {
+                "title": "Get it and tell your employer",
+                "detail": "Keep the certificate or license — then ask for the pay rate certified workers get."
+              }
+            ]
+          },
+          {
+            "id": "cred:dot-medical-examiner-s-certificate",
+            "title": "Get DOT medical examiner's certificate",
+            "gainAmount": 12500,
+            "gain": "Full-time truck drivers with a certification or license typically earn $11,700–$14,300 more a year than those without (median pay)",
+            "source": "Fix My Job estimate, based on US Census Bureau data (2024-08 to 2026-08)",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "earn_more",
+              "rise_up"
+            ],
+            "status": "to_review",
+            "note": "If you don't have it yet: To drive commercial vehicles in interstate commerce (49 CFR 391.41). Issued by: FMCSA.",
+            "steps": [
+              {
+                "title": "Check the rules for your state",
+                "detail": "The official page lists who needs the certification and how to get it: https://www.fmcsa.dot.gov/medical/driver-medical-requirements/driver-medical-fitness-duty"
+              },
+              {
+                "title": "Find an approved program",
+                "detail": "The programs below are approved by your state and report their results to the U.S. Dept. of Labor."
+              },
+              {
+                "title": "Ask who can pay",
+                "detail": "Your employer, or your local American Job Center (federal WIOA funds), may cover the cost."
+              },
+              {
+                "title": "Get it and tell your employer",
+                "detail": "Keep the certificate or license — then ask for the pay rate certified workers get."
+              }
+            ]
+          },
+          {
+            "id": "cred:entry-level-driver-training-eldt",
+            "title": "Get Entry-Level Driver Training (ELDT)",
+            "gainAmount": 12500,
+            "gain": "Full-time truck drivers with a certification or license typically earn $11,700–$14,300 more a year than those without (median pay)",
+            "source": "Fix My Job estimate, based on US Census Bureau data (2024-08 to 2026-08)",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "earn_more",
+              "rise_up"
+            ],
+            "status": "to_review",
+            "note": "If you don't have it yet: Before the first Class A or B CDL skills test, from a provider on FMCSA's Training Provider Registry (49 CFR 380). Issued by: FMCSA.",
+            "steps": [
+              {
+                "title": "Check the rules for your state",
+                "detail": "The official page lists who needs the training and how to get it: https://tpr.fmcsa.dot.gov/"
+              },
+              {
+                "title": "Find an approved program",
+                "detail": "The programs below are approved by your state and report their results to the U.S. Dept. of Labor."
+              },
+              {
+                "title": "Ask who can pay",
+                "detail": "Your employer, or your local American Job Center (federal WIOA funds), may cover the cost."
+              },
+              {
+                "title": "Get it and tell your employer",
+                "detail": "Keep the certificate or license — then ask for the pay rate certified workers get."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:53-1047",
+            "title": "Move up to transportation and material moving supervisor",
+            "gainAmount": 6000,
+            "gain": "Typical pay for transportation and material moving supervisors in Oregon is $61,540/yr — $6,000 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up (manager)",
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "The supervisor job for your line of work.",
+            "steps": [
+              {
+                "title": "Build these skills: Management of Personnel Resources, Persuasion, Coordination",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to transportation and material moving supervisor and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:change:53-7021",
+            "title": "Switch to crane and tower operator",
+            "gainAmount": 27800,
+            "gain": "Typical pay for crane and tower operators in Oregon is $83,260/yr — $27,800 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get a post-secondary certificate",
+                "detail": "61% of crane and tower operators say the job needs a post-secondary certificate (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Look at job ads for crane and tower operator",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:change:47-2072",
+            "title": "Switch to pile driver operator",
+            "gainAmount": 26500,
+            "gain": "Typical pay for pile driver operators in Oregon is about $81,956/yr (estimated from national pay) — $26,500 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Coordination, Operations Monitoring",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for pile driver operator",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:change:53-4011",
+            "title": "Switch to locomotive engineer",
+            "gainAmount": 23600,
+            "gain": "Typical pay for locomotive engineers in Oregon is $79,130/yr — $23,600 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Operations Monitoring, Coordination, Operation and Control",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for locomotive engineer",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "big",
+        "title": "Big moves",
+        "sub": "A degree or a move to a new city",
+        "items": [
+          {
+            "id": "move-high-wage",
+            "title": "Relocate to a Higher-Wage Metro",
+            "gainAmount": 37100,
+            "gain": "Typical pay for your job in Lincoln is worth 67% more than you earn now, after living costs",
+            "source": "Fix My Job estimate, based on US Bureau of Labor Statistics and US Bureau of Economic Analysis data",
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "earn_more",
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "Same role, higher pay after living costs — compared using official wage and price data",
+            "steps": [
+              {
+                "title": "Pick 2–3 target cities",
+                "detail": "Use the list above — it compares pay after living costs, not just pay"
+              },
+              {
+                "title": "Search for jobs there",
+                "detail": "Open the job search for each city and apply before you move"
+              },
+              {
+                "title": "Ask about relocation help",
+                "detail": "Large employers (warehouses, hospitals, hotel chains) often offer sign-on or moving bonuses — ask in the interview"
+              },
+              {
+                "title": "Budget the move",
+                "detail": "Plan for a rent deposit, travel and about a month of expenses before the first paycheck"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "potentialBoost": {
+      "total": 69400,
+      "parts": [
+        {
+          "label": "Get Commercial Driver's License (CDL) Class A",
+          "amount": 12500
+        },
+        {
+          "label": "Join the Teamsters",
+          "amount": 19800
+        },
+        {
+          "label": "Best career move: Relocate to a Higher-Wage Metro",
+          "amount": 37100,
+          "note": "other career moves are alternatives, so only the best counts"
+        }
+      ]
+    },
+    "counts": {
+      "suggested": 10,
+      "inPlan": 0,
+      "toReview": 10,
+      "notForMe": 0,
+      "done": 0
+    },
+    "minimumWageShortfall": 0,
+    "meta": {
+      "ms": 29686
+    }
+  },
+  {
+    "file": "06-andre",
+    "input": {
+      "persona": "Andre Torres",
+      "goal": "rise_up",
+      "soc": "49-9071",
+      "monthsInJob": 8,
+      "annualPay": 40900,
+      "location": {
+        "state": "WI",
+        "metro": "Milwaukee"
+      },
+      "zip": "53202",
+      "details": true
+    },
+    "profile": {
+      "goals": [
+        "rise_up"
+      ],
+      "occupation": {
+        "soc": "49-9071",
+        "title": "Maintenance and Repair Workers, General"
+      },
+      "occupationMatch": "given soc",
+      "role": "Maintenance and Repair Workers, General",
+      "monthsInJob": 8,
+      "annualPay": 40900,
+      "location": "Milwaukee, WI",
+      "zip": "53202",
+      "employer": null,
+      "language": "en"
+    },
+    "buckets": [
+      {
+        "effort": "quick",
+        "title": "Quick wins",
+        "sub": "A few hours of your time",
+        "items": [
+          {
+            "id": "osha-10-cert",
+            "title": "Get OSHA 10 Certification",
+            "gainAmount": 0,
+            "gain": "A safety credential that helps with promotions",
+            "source": null,
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up"
+            ],
+            "status": "to_review",
+            "note": "Fast path to team lead and supervisory roles",
+            "steps": [
+              {
+                "title": "Take the OSHA 10-Hour course",
+                "detail": "Online via an OSHA-authorized training provider"
+              },
+              {
+                "title": "Ask employer to reimburse",
+                "detail": "Most safety-conscious employers cover OSHA training costs"
+              },
+              {
+                "title": "Add it to your resume",
+                "detail": "OSHA card is recognized nationwide and boosts promotion applications"
+              }
+            ]
+          },
+          {
+            "id": "course:717465e0a618da5d",
+            "title": "Take a short course: Appliance Repair Technician - Laundry Specialty",
+            "gainAmount": 0,
+            "gain": "About 24 hours, online · Nana Academy",
+            "source": "US Dept. of Labor",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A certificate in the job you do now. The course is on the US Department of Labor list of approved training programs.",
+            "steps": [
+              {
+                "title": "Check that the certificate is accepted in Wisconsin",
+                "detail": "This course is approved in Texas. Before you sign up or pay, call or email Nana Academy and ask: \"Is this certificate recognized by employers and by the state licensing or certification board in Wisconsin?\" Some certificates are only valid in the state that approved the course."
+              },
+              {
+                "title": "Sign up with Nana Academy",
+                "detail": "Online course, about 24 hours in total. Listed cost: $1,000."
+              },
+              {
+                "title": "Finish the course and keep your certificate",
+                "detail": "Save a copy of the certificate on your phone."
+              },
+              {
+                "title": "Tell your manager and add it to your resume",
+                "detail": "New skills count when you ask for a raise or apply for a better job."
+              }
+            ],
+            "course": {
+              "from": "DOL approved training programs",
+              "provider": "Nana Academy",
+              "name": "Appliance Repair Technician - Laundry Specialty",
+              "format": "online",
+              "location": "8868 Research Blvd. Ste 505 Austin, TX 78758",
+              "distanceMi": 1028.2,
+              "length": "about 24 hours over 2 week(s)",
+              "price": "$1,300",
+              "credential": null,
+              "url": null,
+              "phone": null,
+              "email": null,
+              "results": {
+                "finished": 15,
+                "completionRate": 1,
+                "employed6mo": 0.4667,
+                "yearlyPayAfter": 64933.56,
+                "credentialRate": null,
+                "reported": "2021-12-15"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "effort": "effort",
+        "title": "Worth the effort",
+        "sub": "Weeks or months of training",
+        "items": [
+          {
+            "id": "move:promotion:49-1011",
+            "title": "Move up to mechanics supervisor",
+            "gainAmount": 41700,
+            "gain": "Typical pay for mechanics supervisors in Wisconsin is $82,570/yr — $41,700 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up (manager)",
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "The supervisor job for your line of work.",
+            "steps": [
+              {
+                "title": "Build these skills: Management of Personnel Resources, Systems Analysis, Persuasion",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to mechanics supervisor and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:47-2152",
+            "title": "Move up to plumber",
+            "gainAmount": 40300,
+            "gain": "Typical pay for plumbers in Wisconsin is $81,210/yr — $40,300 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "yes",
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job (O*NET) that pays at least 20% more than yours. Required for this job: Plumber license.",
+            "steps": [
+              {
+                "title": "Get Plumber license",
+                "detail": "Required in most states or cities; rules vary by state Issued by: State or local licensing board."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to plumber and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:49-9041",
+            "title": "Move up to industrial machinery mechanic",
+            "gainAmount": 25700,
+            "gain": "Typical pay for industrial machinery mechanics in Wisconsin is $66,620/yr — $25,700 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "yes",
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job (O*NET) that pays at least 20% more than yours.",
+            "steps": [
+              {
+                "title": "Build these skills: Operations Monitoring, Operation and Control, Quality Control Analysis",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to industrial machinery mechanic and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "get-certified",
+            "title": "Stand out for promotion with a certificate in your job",
+            "gainAmount": 2200,
+            "gain": "Full-time maintenance and repair workers with a certification or license typically earn $3,000–$14,700 more a year than those without (median pay)",
+            "source": "Fix My Job estimate, based on US Census Bureau data (2024-08 to 2026-08)",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "earn_more",
+              "rise_up"
+            ],
+            "status": "to_review",
+            "note": "The survey compares workers in the same job with and without a certification or license. It doesn't say which one they hold — ask employers in your area which credential they look for.",
+            "steps": [
+              {
+                "title": "Find out which credential counts",
+                "detail": "Look at job ads for your job near you and note the certifications or licenses they ask for. CareerOneStop's Certification Finder lists them by occupation."
+              },
+              {
+                "title": "Compare approved programs",
+                "detail": "The programs below are approved by your state and report their results to the U.S. Dept. of Labor."
+              },
+              {
+                "title": "Ask who can pay",
+                "detail": "Your employer, or your local American Job Center (federal WIOA funds), may cover the cost."
+              },
+              {
+                "title": "Finish and pass the exam",
+                "detail": "Keep the certificate and tell your manager — then ask for the pay rate certified workers get."
+              }
+            ]
+          },
+          {
+            "id": "osha-30",
+            "title": "Get OSHA 30 Certification",
+            "gainAmount": 0,
+            "gain": "Opens supervisor and foreman roles",
+            "source": null,
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "Required for supervisory and foreman roles",
+            "steps": [
+              {
+                "title": "Complete OSHA 30-Hour course",
+                "detail": "Online or in-person with an OSHA-authorized provider; many contractors pay for this"
+              },
+              {
+                "title": "Pair with a trade credential",
+                "detail": "Combine with journeyman or master electrician/plumber license"
+              },
+              {
+                "title": "Apply for foreman roles",
+                "detail": "Many foreman job ads ask for OSHA 30 plus site experience"
+              }
+            ]
+          },
+          {
+            "id": "move:change:47-2011",
+            "title": "Switch to boilermaker",
+            "gainAmount": 56700,
+            "gain": "Typical pay for boilermakers in Wisconsin is $97,590/yr — $56,700 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Operation and Control",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for boilermaker",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:change:49-2093",
+            "title": "Switch to electrical and electronics installers and repairer",
+            "gainAmount": 42800,
+            "gain": "Typical pay for electrical and electronics installers and repairers in Wisconsin is about $83,708/yr (estimated from national pay) — $42,800 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Look at job ads for electrical and electronics installers and repairer",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "big",
+        "title": "Big moves",
+        "sub": "A degree or a move to a new city",
+        "items": [
+          {
+            "id": "move:change:11-3013",
+            "title": "Switch to facilities manager",
+            "gainAmount": 62700,
+            "gain": "Typical pay for facilities managers in Wisconsin is $103,620/yr — $62,700 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get an associate degree",
+                "detail": "57% of facilities managers say the job needs an associate degree (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Management of Personnel Resources, Persuasion, Negotiation",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for facilities manager",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move-high-wage",
+            "title": "Relocate to a Higher-Wage Metro",
+            "gainAmount": 26400,
+            "gain": "Typical pay for your job in Decatur is worth 65% more than you earn now, after living costs",
+            "source": "Fix My Job estimate, based on US Bureau of Labor Statistics and US Bureau of Economic Analysis data",
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "earn_more",
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "Same role, higher pay after living costs — compared using official wage and price data",
+            "steps": [
+              {
+                "title": "Pick 2–3 target cities",
+                "detail": "Use the list above — it compares pay after living costs, not just pay"
+              },
+              {
+                "title": "Search for jobs there",
+                "detail": "Open the job search for each city and apply before you move"
+              },
+              {
+                "title": "Ask about relocation help",
+                "detail": "Large employers (warehouses, hospitals, hotel chains) often offer sign-on or moving bonuses — ask in the interview"
+              },
+              {
+                "title": "Budget the move",
+                "detail": "Plan for a rent deposit, travel and about a month of expenses before the first paycheck"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "potentialBoost": {
+      "total": 64900,
+      "parts": [
+        {
+          "label": "Earn more with a certificate in your job",
+          "amount": 2200
+        },
+        {
+          "label": "Best career move: Switch to facilities manager",
+          "amount": 62700,
+          "note": "other career moves are alternatives, so only the best counts"
+        }
+      ]
+    },
+    "counts": {
+      "suggested": 11,
+      "inPlan": 0,
+      "toReview": 11,
+      "notForMe": 0,
+      "done": 0
+    },
+    "minimumWageShortfall": 0,
+    "meta": {
+      "ms": 1927
+    }
+  },
+  {
+    "file": "07-luis",
+    "input": {
+      "persona": "Luis Hayes",
+      "goal": "earn_more",
+      "soc": "31-1131",
+      "monthsInJob": 18,
+      "annualPay": 35600,
+      "location": {
+        "state": "TN",
+        "metro": "Memphis"
+      },
+      "zip": "38103",
+      "details": true
+    },
+    "profile": {
+      "goals": [
+        "earn_more"
+      ],
+      "occupation": {
+        "soc": "31-1131",
+        "title": "Nursing Assistants"
+      },
+      "occupationMatch": "given soc",
+      "role": "Nursing Assistants",
+      "monthsInJob": 18,
+      "annualPay": 35600,
+      "location": "Memphis, TN",
+      "zip": "38103",
+      "employer": null,
+      "language": "en"
+    },
+    "buckets": [
+      {
+        "effort": "quick",
+        "title": "Quick wins",
+        "sub": "A few hours of your time",
+        "items": [
+          {
+            "id": "course:web:northwest-phlebotomy-school-phlebotomy-certification",
+            "title": "Take a short course: Phlebotomy Certification",
+            "gainAmount": 0,
+            "gain": "2 days · Memphis, TN · Northwest Phlebotomy School",
+            "source": "Found by web search on 10/27/2026",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "Phlebotomy skills help nursing assistants take on higher-paying patient care technician roles and make them more competitive for surgical assistant and registered nurse positions. This course is not on the US Department of Labor list of approved training programs — it was found by a web search.",
+            "steps": [
+              {
+                "title": "Check the details with Northwest Phlebotomy School",
+                "detail": "Before you sign up or pay, call or email them and confirm the price, the dates, and that the certificate is recognized by employers in Tennessee.",
+                "url": "https://www.nwphlebotomyschool.com/location/memphis/"
+              },
+              {
+                "title": "Sign up with Northwest Phlebotomy School",
+                "detail": "In Memphis, TN: 2 days. Listed price: $775. You get: Certified Phlebotomy Technician (national certification).",
+                "url": "https://www.nwphlebotomyschool.com/location/memphis/"
+              },
+              {
+                "title": "Finish the course and keep your certificate",
+                "detail": "Save a copy of the certificate on your phone."
+              },
+              {
+                "title": "Tell your manager and add it to your resume",
+                "detail": "New skills count when you ask for a raise or apply for a better job."
+              }
+            ],
+            "course": {
+              "from": "web search",
+              "foundAt": "2026-10-27T00:22:33.171+00:00",
+              "provider": "Northwest Phlebotomy School",
+              "name": "Phlebotomy Certification",
+              "format": "in_person",
+              "location": "Memphis, TN",
+              "length": "2 days",
+              "price": "$775",
+              "priceSource": "https://www.nwphlebotomyschool.com/location/memphis/",
+              "credential": "Certified Phlebotomy Technician (national certification)",
+              "url": "https://www.nwphlebotomyschool.com/location/memphis/",
+              "phone": "(360) 522-3226",
+              "email": null,
+              "sources": {
+                "phone": "https://www.chamberofcommerce.com/united-states/tennessee/memphis/vocational-school/2013674048-northwest-phlebotomy-school-memphis",
+                "price": "https://www.nwphlebotomyschool.com/location/memphis/"
+              },
+              "results": null
+            }
+          },
+          {
+            "id": "union-membership",
+            "title": "Join SEIU",
+            "gainAmount": 4900,
+            "gain": "Union healthcare support workers earn 14% more than non-union healthcare support workers (median weekly pay)",
+            "source": "US Bureau of Labor Statistics, 2025 data",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "Collective bargaining + legal protection",
+            "steps": [
+              {
+                "title": "Check if you're already covered",
+                "detail": "Ask co-workers or HR, or look for union dues on a co-worker's pay stub. If there's a contract, ask for the shop steward."
+              },
+              {
+                "title": "Contact the union for your work",
+                "detail": "Use the links below to reach the union that represents your field. Dues vary by local — ask before you sign up."
+              },
+              {
+                "title": "No union yet? Organize",
+                "detail": "With signed cards from at least 30% of co-workers, you can petition the NLRB for a union election. A union organizer can guide you through it."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "effort",
+        "title": "Worth the effort",
+        "sub": "Weeks or months of training",
+        "items": [
+          {
+            "id": "move:promotion:29-2061",
+            "title": "Move up to practical nurse",
+            "gainAmount": 23300,
+            "gain": "Typical pay for practical nurses in Tennessee is $58,870/yr — $23,300 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "yes",
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job (O*NET) that pays at least 20% more than yours. Required for this job: Practical / vocational nurse license (NCLEX-PN).",
+            "steps": [
+              {
+                "title": "Take college courses",
+                "detail": "38% of practical nurses say the job needs some college courses (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Get Practical / vocational nurse license (NCLEX-PN)",
+                "detail": "Every state; issued by the state board of nursing Issued by: State board of nursing."
+              },
+              {
+                "title": "Build these skills: Systems Analysis, Social Perceptiveness, Coordination",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to practical nurse and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "cred:certified-nurse-aide-state-nurse-aide-registry",
+            "title": "Get Certified nurse aide (state nurse aide registry)",
+            "gainAmount": 300,
+            "gain": "Full-time nursing assistants with a certification or license typically earn $300–$2,800 more a year than those without (median pay)",
+            "source": "Fix My Job estimate, based on US Census Bureau data (2024-08 to 2026-08)",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "earn_more",
+              "rise_up"
+            ],
+            "status": "to_review",
+            "note": "If you don't have it yet: To work in a nursing home for more than 4 months (42 CFR 483.35(d)); at least 75 hours of training (42 CFR 483.152). Hospitals may not require it.. Issued by: State nurse aide registry under CMS rules.",
+            "steps": [
+              {
+                "title": "Check the rules for your state",
+                "detail": "The official page lists who needs the certification and how to get it: https://www.law.cornell.edu/cfr/text/42/483.35"
+              },
+              {
+                "title": "Find an approved program",
+                "detail": "The programs below are approved by your state and report their results to the U.S. Dept. of Labor."
+              },
+              {
+                "title": "Ask who can pay",
+                "detail": "Your employer, or your local American Job Center (federal WIOA funds), may cover the cost."
+              },
+              {
+                "title": "Get it and tell your employer",
+                "detail": "Keep the certificate or license — then ask for the pay rate certified workers get."
+              }
+            ]
+          },
+          {
+            "id": "move:change:31-1133",
+            "title": "Switch to psychiatric aide",
+            "gainAmount": 6100,
+            "gain": "Typical pay for psychiatric aides in Tennessee is about $41,739/yr (estimated from national pay) — $6,100 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Take college courses",
+                "detail": "46% of psychiatric aides say the job needs some college courses (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Persuasion, Negotiation, Social Perceptiveness",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for psychiatric aide",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:change:29-2042",
+            "title": "Switch to emergency medical technician",
+            "gainAmount": 4700,
+            "gain": "Typical pay for emergency medical technicians in Tennessee is $40,330/yr — $4,700 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET). Required for this job: EMT certification.",
+            "steps": [
+              {
+                "title": "Get EMT certification",
+                "detail": "Issued by the state; most states use the NREMT exam Issued by: State EMS office."
+              },
+              {
+                "title": "Look at job ads for emergency medical technician",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "big",
+        "title": "Big moves",
+        "sub": "A degree or a move to a new city",
+        "items": [
+          {
+            "id": "move:promotion:29-1141",
+            "title": "Move up to registered nurse",
+            "gainAmount": 45900,
+            "gain": "Typical pay for registered nurses in Tennessee is $81,500/yr — $45,900 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "yes",
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job that needs more experience or training than yours (O*NET). Required for this job: Registered nurse license (NCLEX-RN).",
+            "steps": [
+              {
+                "title": "Get a bachelor's degree",
+                "detail": "56% of registered nurses say the job needs a bachelor's degree (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Get Registered nurse license (NCLEX-RN)",
+                "detail": "Every state; issued by the state board of nursing Issued by: State board of nursing."
+              },
+              {
+                "title": "Build these skills: Systems Analysis, Judgment and Decision Making, Social Perceptiveness",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to registered nurse and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move-high-wage",
+            "title": "Relocate to a Higher-Wage Metro",
+            "gainAmount": 13100,
+            "gain": "Typical pay for your job in Grand Forks is worth 37% more than you earn now, after living costs",
+            "source": "Fix My Job estimate, based on US Bureau of Labor Statistics and US Bureau of Economic Analysis data",
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [
+              "earn_more"
+            ],
+            "goals": [
+              "earn_more",
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "Same role, higher pay after living costs — compared using official wage and price data",
+            "steps": [
+              {
+                "title": "Pick 2–3 target cities",
+                "detail": "Use the list above — it compares pay after living costs, not just pay"
+              },
+              {
+                "title": "Search for jobs there",
+                "detail": "Open the job search for each city and apply before you move"
+              },
+              {
+                "title": "Ask about relocation help",
+                "detail": "Large employers (warehouses, hospitals, hotel chains) often offer sign-on or moving bonuses — ask in the interview"
+              },
+              {
+                "title": "Budget the move",
+                "detail": "Plan for a rent deposit, travel and about a month of expenses before the first paycheck"
+              }
+            ]
+          },
+          {
+            "id": "move:change:31-2011",
+            "title": "Switch to occupational therapy assistant",
+            "gainAmount": 26800,
+            "gain": "Typical pay for occupational therapy assistants in Tennessee is $62,420/yr — $26,800 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get an associate degree",
+                "detail": "92% of occupational therapy assistants say the job needs an associate degree (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Systems Analysis, Complex Problem Solving, Social Perceptiveness",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for occupational therapy assistant",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "potentialBoost": {
+      "total": 51100,
+      "parts": [
+        {
+          "label": "Get Certified nurse aide (state nurse aide registry)",
+          "amount": 300
+        },
+        {
+          "label": "Join SEIU",
+          "amount": 4900
+        },
+        {
+          "label": "Best career move: Move up to registered nurse",
+          "amount": 45900,
+          "note": "other career moves are alternatives, so only the best counts"
+        }
+      ]
+    },
+    "counts": {
+      "suggested": 9,
+      "inPlan": 0,
+      "toReview": 9,
+      "notForMe": 0,
+      "done": 0
+    },
+    "minimumWageShortfall": 0,
+    "meta": {
+      "ms": 1633
+    }
+  },
+  {
+    "file": "08-yolanda",
+    "input": {
+      "persona": "Yolanda Coleman",
+      "goal": "rise_up",
+      "soc": "51-2090",
+      "monthsInJob": 72,
+      "annualPay": 40700,
+      "location": {
+        "state": "KY",
+        "metro": "Louisville"
+      },
+      "zip": "40202",
+      "details": true
+    },
+    "profile": {
+      "goals": [
+        "rise_up"
+      ],
+      "occupation": {
+        "soc": "51-2090",
+        "title": "Miscellaneous Assemblers and Fabricators"
+      },
+      "occupationMatch": "given soc",
+      "role": "Miscellaneous Assemblers and Fabricators",
+      "monthsInJob": 72,
+      "annualPay": 40700,
+      "location": "Louisville, KY",
+      "zip": "40202",
+      "employer": null,
+      "language": "en"
+    },
+    "buckets": [
+      {
+        "effort": "quick",
+        "title": "Quick wins",
+        "sub": "A few hours of your time",
+        "items": [
+          {
+            "id": "osha-10-cert",
+            "title": "Get OSHA 10 Certification",
+            "gainAmount": 0,
+            "gain": "A safety credential that helps with promotions",
+            "source": null,
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up"
+            ],
+            "status": "to_review",
+            "note": "Fast path to team lead and supervisory roles",
+            "steps": [
+              {
+                "title": "Take the OSHA 10-Hour course",
+                "detail": "Online via an OSHA-authorized training provider"
+              },
+              {
+                "title": "Ask employer to reimburse",
+                "detail": "Most safety-conscious employers cover OSHA training costs"
+              },
+              {
+                "title": "Add it to your resume",
+                "detail": "OSHA card is recognized nationwide and boosts promotion applications"
+              }
+            ]
+          },
+          {
+            "id": "course:web:360training-osha-10-hour-general-industry-training",
+            "title": "Take a short course: OSHA 10-Hour General Industry Training",
+            "gainAmount": 0,
+            "gain": "10 hours · online · 360training",
+            "source": "Found by web search on 10/27/2026",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "This nationally recognized safety certification helps assemblers advance to supervisor roles and is valued by production employers. This course is not on the US Department of Labor list of approved training programs — it was found by a web search.",
+            "steps": [
+              {
+                "title": "Check the details with 360training",
+                "detail": "Before you sign up or pay, call or email them and confirm the price, the dates, and that the certificate is recognized by employers in Kentucky.",
+                "url": "https://www.360training.com/course/osha-10-hour-outreach-general-industry-free-study-guide"
+              },
+              {
+                "title": "Sign up with 360training",
+                "detail": "Online course: 10 hours. Listed price: $59.99. You get: OSHA 10-Hour General Industry DOL Card.",
+                "url": "https://www.360training.com/course/osha-10-hour-outreach-general-industry-free-study-guide"
+              },
+              {
+                "title": "Finish the course and keep your certificate",
+                "detail": "Save a copy of the certificate on your phone."
+              },
+              {
+                "title": "Tell your manager and add it to your resume",
+                "detail": "New skills count when you ask for a raise or apply for a better job."
+              }
+            ],
+            "course": {
+              "from": "web search",
+              "foundAt": "2026-10-27T00:34:35.682Z",
+              "provider": "360training",
+              "name": "OSHA 10-Hour General Industry Training",
+              "format": "online",
+              "location": "Online",
+              "length": "10 hours",
+              "price": "$59.99",
+              "priceSource": "https://www.360training.com/course/osha-10-hour-outreach-general-industry-free-study-guide",
+              "credential": "OSHA 10-Hour General Industry DOL Card",
+              "url": "https://www.360training.com/course/osha-10-hour-outreach-general-industry-free-study-guide",
+              "phone": null,
+              "email": null,
+              "sources": {
+                "price": "https://www.360training.com/course/osha-10-hour-outreach-general-industry-free-study-guide"
+              },
+              "results": null
+            }
+          }
+        ]
+      },
+      {
+        "effort": "effort",
+        "title": "Worth the effort",
+        "sub": "Weeks or months of training",
+        "items": [
+          {
+            "id": "move:promotion:51-1011",
+            "title": "Move up to production and operating supervisor",
+            "gainAmount": 31800,
+            "gain": "Typical pay for production and operating supervisors in Kentucky is $72,490/yr — $31,800 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up (manager)",
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "The supervisor job for your line of work.",
+            "steps": [
+              {
+                "title": "Build these skills: Management of Personnel Resources, Time Management, Complex Problem Solving",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to production and operating supervisor and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:49-9041",
+            "title": "Move up to industrial machinery mechanic",
+            "gainAmount": 23900,
+            "gain": "Typical pay for industrial machinery mechanics in Kentucky is $64,560/yr — $23,900 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "yes",
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job that needs more experience or training than yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get a post-secondary certificate",
+                "detail": "47% of industrial machinery mechanics say the job needs a post-secondary certificate (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Equipment Maintenance, Repairing, Troubleshooting",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to industrial machinery mechanic and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "osha-30",
+            "title": "Get OSHA 30 Certification",
+            "gainAmount": 0,
+            "gain": "Opens supervisor and foreman roles",
+            "source": null,
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "Required for supervisory and foreman roles",
+            "steps": [
+              {
+                "title": "Complete OSHA 30-Hour course",
+                "detail": "Online or in-person with an OSHA-authorized provider; many contractors pay for this"
+              },
+              {
+                "title": "Pair with a trade credential",
+                "detail": "Combine with journeyman or master electrician/plumber license"
+              },
+              {
+                "title": "Apply for foreman roles",
+                "detail": "Many foreman job ads ask for OSHA 30 plus site experience"
+              }
+            ]
+          },
+          {
+            "id": "move:change:17-3024",
+            "title": "Switch to electro-mechanical and mechatronics technologists and technician",
+            "gainAmount": 24600,
+            "gain": "Typical pay for electro-mechanical and mechatronics technologists and technicians in Kentucky is $65,270/yr — $24,600 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get a post-secondary certificate",
+                "detail": "32% of electro-mechanical and mechatronics technologists and technicians say the job needs a post-secondary certificate (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Installation, Troubleshooting, Repairing",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for electro-mechanical and mechatronics technologists and technician",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:change:51-4041",
+            "title": "Switch to machinist",
+            "gainAmount": 18000,
+            "gain": "Typical pay for machinists in Kentucky is $58,660/yr — $18,000 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Troubleshooting, Operation and Control",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for machinist",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "big",
+        "title": "Big moves",
+        "sub": "A degree or a move to a new city",
+        "items": [
+          {
+            "id": "move:promotion:17-3027",
+            "title": "Move up to mechanical engineering technologist",
+            "gainAmount": 37300,
+            "gain": "Typical pay for mechanical engineering technologists in Kentucky is $77,990/yr — $37,300 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "unknown",
+            "forYourGoals": [
+              "rise_up"
+            ],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job that needs more experience or training than yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get a bachelor's degree",
+                "detail": "37% of mechanical engineering technologists say the job needs a bachelor's degree (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Systems Analysis, Systems Evaluation, Complex Problem Solving",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to mechanical engineering technologist and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move-high-wage",
+            "title": "Relocate to a Higher-Wage Metro",
+            "gainAmount": 28600,
+            "gain": "Typical pay for your job in Lafayette is worth 70% more than you earn now, after living costs",
+            "source": "Fix My Job estimate, based on US Bureau of Labor Statistics and US Bureau of Economic Analysis data",
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "earn_more",
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "Same role, higher pay after living costs — compared using official wage and price data",
+            "steps": [
+              {
+                "title": "Pick 2–3 target cities",
+                "detail": "Use the list above — it compares pay after living costs, not just pay"
+              },
+              {
+                "title": "Search for jobs there",
+                "detail": "Open the job search for each city and apply before you move"
+              },
+              {
+                "title": "Ask about relocation help",
+                "detail": "Large employers (warehouses, hospitals, hotel chains) often offer sign-on or moving bonuses — ask in the interview"
+              },
+              {
+                "title": "Budget the move",
+                "detail": "Plan for a rent deposit, travel and about a month of expenses before the first paycheck"
+              }
+            ]
+          },
+          {
+            "id": "move:change:49-2094",
+            "title": "Switch to electrical and electronics repairer",
+            "gainAmount": 22300,
+            "gain": "Typical pay for electrical and electronics repairers in Kentucky is $62,980/yr — $22,300 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get an associate degree",
+                "detail": "46% of electrical and electronics repairers say the job needs an associate degree (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Repairing, Troubleshooting, Equipment Selection",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for electrical and electronics repairer",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "potentialBoost": {
+      "total": 37300,
+      "parts": [
+        {
+          "label": "Best career move: Move up to mechanical engineering technologist",
+          "amount": 37300,
+          "note": "other career moves are alternatives, so only the best counts"
+        }
+      ]
+    },
+    "counts": {
+      "suggested": 10,
+      "inPlan": 0,
+      "toReview": 10,
+      "notForMe": 0,
+      "done": 0
+    },
+    "minimumWageShortfall": 0,
+    "meta": {
+      "ms": 28356
+    }
+  },
+  {
+    "file": "09-shawna",
+    "input": {
+      "persona": "Shawna Garcia",
+      "goal": "claim_rights",
+      "soc": "47-2061",
+      "monthsInJob": 15,
+      "annualPay": 33900,
+      "location": {
+        "state": "OK",
+        "metro": "Tulsa"
+      },
+      "zip": "74103",
+      "workSchedule": {
+        "hoursPerWeek": 50,
+        "daysPerWeek": 5,
+        "weekendHoursPerWeek": 0,
+        "overtimeMultiplier": 1.5,
+        "weekendPremiumPct": 0
+      },
+      "rightsAnswers": {
+        "payUnit": "hour",
+        "workType": "w2",
+        "shifts": [
+          "over8",
+          "weekends"
+        ],
+        "concerns": [
+          "noOvertime"
+        ]
+      },
+      "details": true
+    },
+    "profile": {
+      "goals": [
+        "claim_rights"
+      ],
+      "occupation": {
+        "soc": "47-2061",
+        "title": "Construction Laborers"
+      },
+      "occupationMatch": "given soc",
+      "role": "Construction Laborers",
+      "monthsInJob": 15,
+      "annualPay": 33900,
+      "location": "Tulsa, OK",
+      "zip": "74103",
+      "employer": null,
+      "language": "en"
+    },
+    "buckets": [
+      {
+        "effort": "quick",
+        "title": "Quick wins",
+        "sub": "A few hours of your time",
+        "items": [
+          {
+            "id": "union-membership",
+            "title": "Join LiUNA",
+            "gainAmount": 18800,
+            "gain": "Union construction workers earn 56% more than non-union construction workers (median weekly pay)",
+            "source": "US Bureau of Labor Statistics, 2025 data",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "claim_rights"
+            ],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "Collective bargaining + legal protection",
+            "steps": [
+              {
+                "title": "Check if you're already covered",
+                "detail": "Ask co-workers or HR, or look for union dues on a co-worker's pay stub. If there's a contract, ask for the shop steward."
+              },
+              {
+                "title": "Contact the union for your work",
+                "detail": "Use the links below to reach the union that represents your field. Dues vary by local — ask before you sign up."
+              },
+              {
+                "title": "No union yet? Organize",
+                "detail": "With signed cards from at least 30% of co-workers, you can petition the NLRB for a union election. A union organizer can guide you through it."
+              }
+            ]
+          },
+          {
+            "id": "right:premium",
+            "title": "Ask for night or weekend extra pay",
+            "gainAmount": 0,
+            "gain": "No law in Oklahoma requires extra pay for nights or weekends — but you can ask, and a union contract can require it.",
+            "source": null,
+            "kind": "pay_fix",
+            "moveType": null,
+            "forYourGoals": [
+              "claim_rights"
+            ],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "",
+            "steps": [
+              {
+                "title": "Ask co-workers what they get",
+                "detail": "Find out if anyone gets extra pay for nights or weekends."
+              },
+              {
+                "title": "Ask your manager in writing",
+                "detail": "Ask whether there’s a night or weekend differential, and keep a copy."
+              },
+              {
+                "title": "Check a union contract",
+                "detail": "If you’re covered by one, it may require extra pay."
+              }
+            ]
+          },
+          {
+            "id": "right:weekly_overtime",
+            "title": "Check if you’re owed overtime",
+            "gainAmount": 0,
+            "gain": "You work over 40 hours. Hours over 40 must be paid at 1.5×.",
+            "source": null,
+            "kind": "pay_fix",
+            "moveType": null,
+            "forYourGoals": [
+              "claim_rights"
+            ],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "1.5× pay after 40 hours a week (federal law)",
+            "steps": [
+              {
+                "title": "Answer the questions above",
+                "detail": "Each answer is saved, so you won’t be asked again."
+              },
+              {
+                "title": "Keep a record of your hours",
+                "detail": "Write down when you start, stop and take breaks. It’s your evidence if you need it."
+              }
+            ]
+          },
+          {
+            "id": "osha-10-cert",
+            "title": "Get OSHA 10 Certification",
+            "gainAmount": 0,
+            "gain": "A safety credential that helps with promotions",
+            "source": null,
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "rise_up"
+            ],
+            "status": "to_review",
+            "note": "Fast path to team lead and supervisory roles",
+            "steps": [
+              {
+                "title": "Take the OSHA 10-Hour course",
+                "detail": "Online via an OSHA-authorized training provider"
+              },
+              {
+                "title": "Ask employer to reimburse",
+                "detail": "Most safety-conscious employers cover OSHA training costs"
+              },
+              {
+                "title": "Add it to your resume",
+                "detail": "OSHA card is recognized nationwide and boosts promotion applications"
+              }
+            ]
+          },
+          {
+            "id": "course:95cabc47b903331f",
+            "title": "Take a short course: Revit",
+            "gainAmount": 0,
+            "gain": "About 16 hours, online · O S JOHNSON TECHNICAL INSTITUTE INC",
+            "source": "US Dept. of Labor",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A first step toward the construction trades supervisor job. The course is on the US Department of Labor list of approved training programs.",
+            "steps": [
+              {
+                "title": "Check that the certificate is accepted in Oklahoma",
+                "detail": "This course is approved in Pennsylvania. Before you sign up or pay, call or email O S JOHNSON TECHNICAL INSTITUTE INC and ask: \"Is this certificate recognized by employers and by the state licensing or certification board in Oklahoma?\" Some certificates are only valid in the state that approved the course."
+              },
+              {
+                "title": "Sign up with O S JOHNSON TECHNICAL INSTITUTE INC",
+                "detail": "Online course, about 16 hours in total. Listed cost: $300. You get: Revit."
+              },
+              {
+                "title": "Finish the course and keep your certificate",
+                "detail": "Save a copy of the certificate on your phone."
+              },
+              {
+                "title": "Tell your manager and add it to your resume",
+                "detail": "New skills count when you ask for a raise or apply for a better job."
+              }
+            ],
+            "course": {
+              "from": "DOL approved training programs",
+              "provider": "O S JOHNSON TECHNICAL INSTITUTE INC",
+              "name": "REVIT",
+              "format": "online",
+              "location": "3427 N MAIN AVE SCRANTON, PA 18508",
+              "distanceMi": 1151.2,
+              "length": "about 16 hours over 2 week(s)",
+              "price": "$300",
+              "credential": "Revit",
+              "url": null,
+              "phone": null,
+              "email": null,
+              "results": {
+                "finished": null,
+                "completionRate": null,
+                "employed6mo": null,
+                "yearlyPayAfter": null,
+                "credentialRate": null,
+                "reported": "2022-12-09"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "effort": "effort",
+        "title": "Worth the effort",
+        "sub": "Weeks or months of training",
+        "items": [
+          {
+            "id": "move:promotion:47-1011",
+            "title": "Move up to construction trades supervisor",
+            "gainAmount": 39100,
+            "gain": "Typical pay for construction trades supervisors in Oklahoma is $73,040/yr — $39,100 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up (manager)",
+            "forYourGoals": [],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "The supervisor job for your line of work.",
+            "steps": [
+              {
+                "title": "Get a post-secondary certificate",
+                "detail": "27% of construction trades supervisors say the job needs a post-secondary certificate (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Management of Personnel Resources, Social Perceptiveness, Persuasion",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to construction trades supervisor and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:change:47-2211",
+            "title": "Switch to sheet metal worker",
+            "gainAmount": 31700,
+            "gain": "Typical pay for sheet metal workers in Oklahoma is $65,640/yr — $31,700 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Judgment and Decision Making, Time Management",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for sheet metal worker",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:49-9043",
+            "title": "Move up to maintenance worker",
+            "gainAmount": 25100,
+            "gain": "Typical pay for maintenance workers in Oklahoma is $58,970/yr — $25,100 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "unknown",
+            "forYourGoals": [],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job that needs more experience or training than yours (O*NET).",
+            "steps": [
+              {
+                "title": "Get a post-secondary certificate",
+                "detail": "54% of maintenance workers say the job needs a post-secondary certificate (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Build these skills: Equipment Maintenance, Repairing, Troubleshooting",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to maintenance worker and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:change:47-2152",
+            "title": "Switch to plumber",
+            "gainAmount": 24100,
+            "gain": "Typical pay for plumbers in Oklahoma is $57,970/yr — $24,100 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET). Required for this job: Plumber license.",
+            "steps": [
+              {
+                "title": "Get a post-secondary certificate",
+                "detail": "43% of plumbers say the job needs a post-secondary certificate (O*NET). Programs that lead to this job are listed below."
+              },
+              {
+                "title": "Get Plumber license",
+                "detail": "Required in most states or cities; rules vary by state Issued by: State or local licensing board."
+              },
+              {
+                "title": "Build these skills: Troubleshooting, Repairing, Judgment and Decision Making",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for plumber",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:47-2021",
+            "title": "Move up to brickmason",
+            "gainAmount": 16700,
+            "gain": "Typical pay for brickmasons in Oklahoma is $50,620/yr — $16,700 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "unknown",
+            "forYourGoals": [],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job (O*NET) that pays at least 20% more than yours.",
+            "steps": [
+              {
+                "title": "Build these skills: Quality Control Analysis",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to brickmason and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:change:53-7041",
+            "title": "Switch to hoist and winch operator",
+            "gainAmount": 16600,
+            "gain": "Typical pay for hoist and winch operators in Oklahoma is about $50,493/yr (estimated from national pay) — $16,600 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Management of Personnel Resources, Instructing",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for hoist and winch operator",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "osha-30",
+            "title": "Get OSHA 30 Certification",
+            "gainAmount": 0,
+            "gain": "Opens supervisor and foreman roles",
+            "source": null,
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "Required for supervisory and foreman roles",
+            "steps": [
+              {
+                "title": "Complete OSHA 30-Hour course",
+                "detail": "Online or in-person with an OSHA-authorized provider; many contractors pay for this"
+              },
+              {
+                "title": "Pair with a trade credential",
+                "detail": "Combine with journeyman or master electrician/plumber license"
+              },
+              {
+                "title": "Apply for foreman roles",
+                "detail": "Many foreman job ads ask for OSHA 30 plus site experience"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "big",
+        "title": "Big moves",
+        "sub": "A degree or a move to a new city",
+        "items": [
+          {
+            "id": "move-high-wage",
+            "title": "Relocate to a Higher-Wage Metro",
+            "gainAmount": 43900,
+            "gain": "Typical pay for your job in Vineland is worth 129% more than you earn now, after living costs",
+            "source": "Fix My Job estimate, based on US Bureau of Labor Statistics and US Bureau of Economic Analysis data",
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "earn_more",
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "Same role, higher pay after living costs — compared using official wage and price data",
+            "steps": [
+              {
+                "title": "Pick 2–3 target cities",
+                "detail": "Use the list above — it compares pay after living costs, not just pay"
+              },
+              {
+                "title": "Search for jobs there",
+                "detail": "Open the job search for each city and apply before you move"
+              },
+              {
+                "title": "Ask about relocation help",
+                "detail": "Large employers (warehouses, hospitals, hotel chains) often offer sign-on or moving bonuses — ask in the interview"
+              },
+              {
+                "title": "Budget the move",
+                "detail": "Plan for a rent deposit, travel and about a month of expenses before the first paycheck"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "potentialBoost": {
+      "total": 62700,
+      "parts": [
+        {
+          "label": "Join LiUNA",
+          "amount": 18800
+        },
+        {
+          "label": "Best career move: Relocate to a Higher-Wage Metro",
+          "amount": 43900,
+          "note": "other career moves are alternatives, so only the best counts"
+        }
+      ]
+    },
+    "counts": {
+      "suggested": 13,
+      "inPlan": 0,
+      "toReview": 13,
+      "notForMe": 0,
+      "done": 0
+    },
+    "minimumWageShortfall": 0,
+    "meta": {
+      "ms": 45014,
+      "warning": "Stopped waiting after 45000 ms — some data may still have been loading"
+    }
+  },
+  {
+    "file": "10-marcus",
+    "input": {
+      "persona": "Marcus Ramirez",
+      "goal": "claim_rights",
+      "soc": "53-3033",
+      "monthsInJob": 48,
+      "annualPay": 34500,
+      "location": {
+        "state": "IA",
+        "metro": "Des Moines"
+      },
+      "zip": "50309",
+      "workSchedule": {
+        "hoursPerWeek": 45,
+        "daysPerWeek": 5,
+        "weekendHoursPerWeek": 0,
+        "overtimeMultiplier": 1.5,
+        "weekendPremiumPct": 0
+      },
+      "rightsAnswers": {
+        "payUnit": "job",
+        "workType": "1099",
+        "shifts": [
+          "over8"
+        ],
+        "concerns": [
+          "misclassified"
+        ]
+      },
+      "details": true
+    },
+    "profile": {
+      "goals": [
+        "claim_rights"
+      ],
+      "occupation": {
+        "soc": "53-3033",
+        "title": "Light Truck Drivers"
+      },
+      "occupationMatch": "given soc",
+      "role": "Light Truck Drivers",
+      "monthsInJob": 48,
+      "annualPay": 34500,
+      "location": "Des Moines, IA",
+      "zip": "50309",
+      "employer": null,
+      "language": "en"
+    },
+    "buckets": [
+      {
+        "effort": "quick",
+        "title": "Quick wins",
+        "sub": "A few hours of your time",
+        "items": [
+          {
+            "id": "union-membership",
+            "title": "Join the Teamsters",
+            "gainAmount": 12300,
+            "gain": "Union transportation & warehouse workers earn 36% more than non-union transportation & warehouse workers (median weekly pay)",
+            "source": "US Bureau of Labor Statistics, 2025 data",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [
+              "claim_rights"
+            ],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "Collective bargaining + legal protection",
+            "steps": [
+              {
+                "title": "Check if you're already covered",
+                "detail": "Ask co-workers or HR, or look for union dues on a co-worker's pay stub. If there's a contract, ask for the shop steward."
+              },
+              {
+                "title": "Contact the union for your work",
+                "detail": "Use the links below to reach the union that represents your field. Dues vary by local — ask before you sign up."
+              },
+              {
+                "title": "No union yet? Organize",
+                "detail": "With signed cards from at least 30% of co-workers, you can petition the NLRB for a union election. A union organizer can guide you through it."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:43-5052",
+            "title": "Move up to postal service mail carrier",
+            "gainAmount": 25400,
+            "gain": "Typical pay for postal service mail carriers in Iowa is $59,880/yr — $25,400 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "unknown",
+            "forYourGoals": [],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job (O*NET) that pays at least 20% more than yours.",
+            "steps": [
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to postal service mail carrier and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "course:c00c58b50d50587e",
+            "title": "Take a short course: ELDT Online Hazardous Materials Endorsement (HME) Theory Course",
+            "gainAmount": 0,
+            "gain": "About 4 hours, online · Center for Employment Education (CEE)",
+            "source": "US Dept. of Labor",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A first step toward the truck driver job. The course is on the US Department of Labor list of approved training programs.",
+            "steps": [
+              {
+                "title": "Check that the certificate is accepted in Iowa",
+                "detail": "This course is approved in Alaska. Before you sign up or pay, call or email Center for Employment Education (CEE) and ask: \"Is this certificate recognized by employers and by the state licensing or certification board in Iowa?\" Some certificates are only valid in the state that approved the course.",
+                "url": "http://www.cee-ak.com"
+              },
+              {
+                "title": "Sign up with Center for Employment Education (CEE)",
+                "detail": "Online course, about 4 hours in total. Listed cost: $200. You get: Hazardous Materials Endorsement (HME) on Commercial Driver License.",
+                "url": "http://www.cee-ak.com"
+              },
+              {
+                "title": "Finish the course and keep your certificate",
+                "detail": "Save a copy of the certificate on your phone."
+              },
+              {
+                "title": "Tell your manager and add it to your resume",
+                "detail": "New skills count when you ask for a raise or apply for a better job."
+              }
+            ],
+            "course": {
+              "from": "DOL approved training programs",
+              "provider": "Center for Employment Education (CEE)",
+              "name": "ELDT Online Hazardous Materials Endorsement (HME) Theory Course",
+              "format": "online",
+              "location": "520 E 34th Ave. Ste 201 Anchorage, AK 99503",
+              "distanceMi": 2665.3,
+              "length": "about 4 hours over 1 week(s)",
+              "price": "$200",
+              "credential": "Hazardous Materials Endorsement (HME) on Commercial Driver License",
+              "url": "http://www.cee-ak.com",
+              "phone": null,
+              "email": null,
+              "results": {
+                "finished": 19,
+                "completionRate": 1,
+                "employed6mo": 0.5,
+                "yearlyPayAfter": 37918.72,
+                "credentialRate": 0.3684,
+                "reported": "2023-07-18"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "effort": "effort",
+        "title": "Worth the effort",
+        "sub": "Weeks or months of training",
+        "items": [
+          {
+            "id": "right:misclassification",
+            "title": "Check if you’re really a contractor",
+            "gainAmount": 0,
+            "gain": "Contractors aren’t covered by most wage laws — but many people paid as contractors are really employees. 5 quick questions will tell.",
+            "source": null,
+            "kind": "pay_fix",
+            "moveType": null,
+            "forYourGoals": [
+              "claim_rights"
+            ],
+            "goals": [
+              "claim_rights"
+            ],
+            "status": "to_review",
+            "note": "",
+            "steps": [
+              {
+                "title": "Collect your records",
+                "detail": "Your contract or app terms, schedules, messages telling you how to do the work, and your 1099s."
+              },
+              {
+                "title": "Ask the IRS to decide",
+                "detail": "Free: file IRS Form SS-8 and the IRS decides whether you’re an employee or a contractor.",
+                "url": "https://www.irs.gov/forms-pubs/about-form-ss-8"
+              },
+              {
+                "title": "File with your state labor office",
+                "detail": "They can order back pay and overtime if you were really an employee — links below."
+              },
+              {
+                "title": "Talk to a lawyer",
+                "detail": "Misclassification cases are often taken on with no upfront fee."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:53-4031",
+            "title": "Move up to railroad conductor",
+            "gainAmount": 39800,
+            "gain": "Typical pay for railroad conductors in Iowa is about $74,267/yr (estimated from national pay) — $39,800 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up",
+            "trainingNearby": "unknown",
+            "forYourGoals": [],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "A related job (O*NET) that pays at least 20% more than yours.",
+            "steps": [
+              {
+                "title": "Build these skills: Coordination, Management of Personnel Resources, Persuasion",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to railroad conductor and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:promotion:53-1047",
+            "title": "Move up to transportation and material moving supervisor",
+            "gainAmount": 26000,
+            "gain": "Typical pay for transportation and material moving supervisors in Iowa is $60,490/yr — $26,000 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "move_up (manager)",
+            "forYourGoals": [],
+            "goals": [
+              "rise_up",
+              "earn_more"
+            ],
+            "status": "to_review",
+            "note": "The supervisor job for your line of work.",
+            "steps": [
+              {
+                "title": "Build these skills: Management of Personnel Resources, Coordination, Negotiation",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Tell your manager",
+                "detail": "Say you want to move up to transportation and material moving supervisor and ask what they'd need to see from you."
+              },
+              {
+                "title": "Apply for openings",
+                "detail": "Internal openings often go to people who asked first — check job sites near you too; your current experience counts."
+              }
+            ]
+          },
+          {
+            "id": "move:change:43-5051",
+            "title": "Switch to postal service clerk",
+            "gainAmount": 25500,
+            "gain": "Typical pay for postal service clerks in Iowa is $59,970/yr — $25,500 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Service Orientation",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for postal service clerk",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:change:53-7121",
+            "title": "Switch to tank car",
+            "gainAmount": 17000,
+            "gain": "Typical pay for tank car in Iowa is $51,450/yr — $17,000 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Build these skills: Operations Monitoring, Complex Problem Solving",
+                "detail": "O*NET lists them as important in this job, at a higher level than in yours. Ask to take them on at work, or learn them in a course."
+              },
+              {
+                "title": "Look at job ads for tank car",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "move:change:53-7081",
+            "title": "Switch to refuse and recyclable material collector",
+            "gainAmount": 15400,
+            "gain": "Typical pay for refuse and recyclable material collectors in Iowa is $49,850/yr — $15,400 more than you earn now",
+            "source": "US Bureau of Labor Statistics, 2025 · O*NET",
+            "kind": "career_move",
+            "moveType": "career_change",
+            "forYourGoals": [],
+            "goals": [
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "A related job that uses many of the same skills as yours (O*NET).",
+            "steps": [
+              {
+                "title": "Look at job ads for refuse and recyclable material collector",
+                "detail": "Note what employers near you ask for, and which of your experience fits."
+              },
+              {
+                "title": "Apply",
+                "detail": "Lead with the skills the two jobs share. Some employers train new hires."
+              }
+            ]
+          },
+          {
+            "id": "cred:driver-s-license",
+            "title": "Get Driver's license",
+            "gainAmount": 7800,
+            "gain": "Full-time truck drivers with a certification or license typically earn $11,700–$14,300 more a year than those without (median pay)",
+            "source": "Fix My Job estimate, based on US Census Bureau data (2024-08 to 2026-08)",
+            "kind": "add_on",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "earn_more",
+              "rise_up"
+            ],
+            "status": "to_review",
+            "note": "If you don't have it yet: Required for delivery truck drivers. Issued by: State DMV.",
+            "steps": [
+              {
+                "title": "Check the rules for your state",
+                "detail": "The official page lists who needs the license and how to get it: https://www.usa.gov/motor-vehicle-services"
+              },
+              {
+                "title": "Find an approved program",
+                "detail": "The programs below are approved by your state and report their results to the U.S. Dept. of Labor."
+              },
+              {
+                "title": "Ask who can pay",
+                "detail": "Your employer, or your local American Job Center (federal WIOA funds), may cover the cost."
+              },
+              {
+                "title": "Get it and tell your employer",
+                "detail": "Keep the certificate or license — then ask for the pay rate certified workers get."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "effort": "big",
+        "title": "Big moves",
+        "sub": "A degree or a move to a new city",
+        "items": [
+          {
+            "id": "move-high-wage",
+            "title": "Relocate to a Higher-Wage Metro",
+            "gainAmount": 17300,
+            "gain": "Typical pay for your job in Hagerstown is worth 50% more than you earn now, after living costs",
+            "source": "Fix My Job estimate, based on US Bureau of Labor Statistics and US Bureau of Economic Analysis data",
+            "kind": "career_move",
+            "moveType": null,
+            "forYourGoals": [],
+            "goals": [
+              "earn_more",
+              "change_careers"
+            ],
+            "status": "to_review",
+            "note": "Same role, higher pay after living costs — compared using official wage and price data",
+            "steps": [
+              {
+                "title": "Pick 2–3 target cities",
+                "detail": "Use the list above — it compares pay after living costs, not just pay"
+              },
+              {
+                "title": "Search for jobs there",
+                "detail": "Open the job search for each city and apply before you move"
+              },
+              {
+                "title": "Ask about relocation help",
+                "detail": "Large employers (warehouses, hospitals, hotel chains) often offer sign-on or moving bonuses — ask in the interview"
+              },
+              {
+                "title": "Budget the move",
+                "detail": "Plan for a rent deposit, travel and about a month of expenses before the first paycheck"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "potentialBoost": {
+      "total": 59900,
+      "parts": [
+        {
+          "label": "Join the Teamsters",
+          "amount": 12300
+        },
+        {
+          "label": "Get Driver's license",
+          "amount": 7800
+        },
+        {
+          "label": "Best career move: Move up to railroad conductor",
+          "amount": 39800,
+          "note": "other career moves are alternatives, so only the best counts"
+        }
+      ]
+    },
+    "counts": {
+      "suggested": 11,
+      "inPlan": 0,
+      "toReview": 11,
+      "notForMe": 0,
+      "done": 0
+    },
+    "minimumWageShortfall": 0,
+    "meta": {
+      "ms": 6911
+    }
+  }
+]

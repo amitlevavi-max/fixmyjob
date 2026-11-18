@@ -1,0 +1,18 @@
+{
+  "goal": "claim_rights",
+  "otherGoals": ["earn_more"],
+  "job": "delivery driver",
+  "autoPickOccupation": true,
+  "yearsInJob": 2,
+  "annualPay": 29000,
+  "hourlyRate": 14,
+  "location": { "state": "NY", "metro": "New York City" },
+  "workSchedule": { "hoursPerWeek": 48, "overtimeMultiplier": 1 },
+  "rightsAnswers": {
+    "payUnit": "hour",
+    "workType": "w2",
+    "concerns": ["noOvertime", "noBreaks"],
+    "otPay": "same",
+    "mealBreak": "never"
+  }
+}

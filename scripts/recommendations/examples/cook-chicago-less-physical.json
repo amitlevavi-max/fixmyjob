@@ -1,0 +1,10 @@
+{
+  "goal": "less_physical",
+  "otherGoals": ["work_life_balance"],
+  "soc": "35-2014",
+  "job": "line cook",
+  "yearsInJob": 6,
+  "annualPay": 38000,
+  "location": { "state": "IL", "metro": "Chicago" },
+  "language": "es"
+}

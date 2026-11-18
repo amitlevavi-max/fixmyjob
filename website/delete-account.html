@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delete Your Account — Fix My Job</title>
+  <meta name="description" content="Ask Fix My Job to delete your account and data.">
+  <link rel="canonical" href="https://fixmyjob.ai/delete-account">
+  <meta name="theme-color" content="#112040">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="assets/logo.png" onerror="this.onerror=null;this.src='assets/logo.svg'" alt=""><span>Fix My Job</span></a>
+      <nav class="nav" aria-label="Main">
+        <a href="/privacy">Privacy</a>
+        <a href="/delete-account" aria-current="page">Delete account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap narrow prose">
+    <div class="page-head">
+      <span class="eyebrow">Fix My Job app</span>
+      <h1>Delete your <span class="accent">account</span></h1>
+    </div>
+    <p class="lead">You can ask us to delete your Fix My Job account and the information linked to it. You don't need the app installed to do this.</p>
+
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><span>Fill in the form below with the email address you use to sign in to Fix My Job (your Google account email).</span></li>
+      <li><span>We check that the request is genuine. We may email you at that address to confirm.</span></li>
+      <li><span>We delete your account and data within 30 days, and email you when it's done.</span></li>
+    </ol>
+
+    <div class="card ticks" id="form-card">
+      <form id="delete-form" class="form-grid" novalidate>
+        <label class="field">
+          Email you sign in with
+          <input type="email" name="email" id="email" autocomplete="email" required placeholder="you@gmail.com">
+        </label>
+
+        <fieldset>
+          <legend>What should we delete?</legend>
+          <label class="choice">
+            <input type="radio" name="scope" value="account" checked>
+            <div><b>My whole account and all my data</b><span>You won't be able to sign in to this account again.</span></div>
+          </label>
+          <label class="choice">
+            <input type="radio" name="scope" value="data_only">
+            <div><b>Only my answers and plan</b><span>Keep my sign-in, but clear my job, pay, location, goals, rights answers and plan.</span></div>
+          </label>
+        </fieldset>
+
+        <label class="field">
+          Why are you leaving? <span class="hint">Optional</span>
+          <select name="reason" id="reason">
+            <option value="">Prefer not to say</option>
+            <option value="not_useful">The app wasn't useful to me</option>
+            <option value="privacy">Privacy concerns</option>
+            <option value="found_job">I found a new job</option>
+            <option value="too_many_questions">Too many questions</option>
+            <option value="other">Something else</option>
+          </select>
+        </label>
+
+        <label class="field">
+          Anything else? <span class="hint">Optional</span>
+          <textarea name="comment" id="comment" maxlength="1000"></textarea>
+        </label>
+
+        <!-- Honeypot: hidden from people, bots fill it in -->
+        <div class="hp" aria-hidden="true">
+          <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <label class="check">
+          <input type="checkbox" name="confirm" id="confirm" required>
+          <span>I understand this can't be undone. My answers, pay comparisons and plan will be permanently deleted.</span>
+        </label>
+
+        <div class="notice error" id="error" role="alert"></div>
+
+        <div><button class="btn" type="submit" id="submit">Request deletion</button></div>
+      </form>
+    </div>
+
+    <div class="card success" id="success" hidden>
+      <div class="tick" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></div>
+      <h2 style="margin-top:0">Request <span class="accent">received</span></h2>
+      <p>We'll delete your data within 30 days and email you when it's done.</p>
+      <p class="muted small">Reference: <strong id="ref"></strong></p>
+    </div>
+
+    <h2>What gets deleted</h2>
+    <div class="two-col">
+      <div class="card">
+        <h3 style="margin-top:0">Deleted</h3>
+        <ul>
+          <li>Your account and sign-in details (name, email, picture)</li>
+          <li>Your job, pay, employer, hours and location answers</li>
+          <li>Your answers about your rights and problems at work</li>
+          <li>Your goals, skills, certifications and plan</li>
+          <li>Your ratings, feedback and "Not for me" reasons</li>
+          <li>Your job-offer settings and contact email</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Kept</h3>
+        <ul>
+          <li>A record of this request (your email, date and reference) to show we handled it — kept for up to 2 years</li>
+          <li>Short-lived server logs and backups, which are overwritten in the normal cycle</li>
+          <li>Totals that can't identify you (for example, how many people rated a suggestion useful)</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>Questions? Email <a href="mailto:amitlevavi@gmail.com">amitlevavi@gmail.com</a>. See also our <a href="/privacy">privacy policy</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Fix My Job</span>
+      <nav aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/privacy">Privacy policy</a>
+        <a href="mailto:amitlevavi@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Supabase Edge Function that records the request (and emails the team).
+    const ENDPOINT = "https://nebgfohbxsdcthvrlipm.supabase.co/functions/v1/request-account-deletion";
+
+    const form = document.getElementById("delete-form");
+    const errorBox = document.getElementById("error");
+    const submit = document.getElementById("submit");
+
+    function showError(msg) {
+      errorBox.textContent = msg;
+      errorBox.classList.add("show");
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      errorBox.classList.remove("show");
+      const data = new FormData(form);
+      const email = String(data.get("email") || "").trim();
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+        showError("Please enter the email address you use to sign in.");
+        document.getElementById("email").focus();
+        return;
+      }
+      if (!document.getElementById("confirm").checked) {
+        showError("Please tick the box to confirm you understand this can't be undone.");
+        return;
+      }
+
+      submit.disabled = true;
+      submit.textContent = "Sending…";
+      try {
+        const res = await fetch(ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            email,
+            scope: data.get("scope"),
+            reason: data.get("reason") || "",
+            comment: String(data.get("comment") || ""),
+            website: data.get("website") || "",
+            confirm: true,
+          }),
+        });
+        const out = await res.json().catch(() => ({}));
+        if (res.ok && out.ok) {
+          document.getElementById("ref").textContent = out.reference || "—";
+          document.getElementById("form-card").hidden = true;
+          const done = document.getElementById("success");
+          done.hidden = false;
+          done.scrollIntoView({ behavior: "smooth", block: "center" });
+          return;
+        }
+        if (res.status === 429) showError("Too many requests from this connection. Please try again in an hour, or email us.");
+        else showError("Something went wrong. Please try again, or email amitlevavi@gmail.com.");
+      } catch {
+        showError("We couldn't reach our server. Check your connection and try again, or email amitlevavi@gmail.com.");
+      } finally {
+        submit.disabled = false;
+        submit.textContent = "Request deletion";
+      }
+    });
+  </script>
+</body>
+</html>

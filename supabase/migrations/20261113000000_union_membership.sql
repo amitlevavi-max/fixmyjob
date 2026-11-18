@@ -1,0 +1,12 @@
+-- ─────────────────────────────────────────────────────────────────────────────
+-- 2026-11-13 — user_profiles.union_membership
+-- The user's own answer, asked only inside the "Join <union>" action and in
+-- Profile (never in onboarding):
+--   { "status": "member"|"other"|"no"|"unsure",
+--     "unionId": "teamsters"|… (status member: the union we suggested),
+--     "otherName": text|null (status other: which union, if they said),
+--     "answeredAt": ISO }
+-- Same row-level security as the rest of user_profiles (users read/write their own row).
+-- Revert: alter table public.user_profiles drop column union_membership;
+-- ─────────────────────────────────────────────────────────────────────────────
+alter table public.user_profiles add column if not exists union_membership jsonb;

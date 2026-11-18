@@ -1,0 +1,52 @@
+Fix My Job is an independent app. It is not a government app and is not affiliated with, endorsed by or acting for any government agency.
+
+Fix My Job helps people who work with their hands — in warehouses, delivery, driving, care, cleaning, factories, construction and maintenance — get paid what they're worth and find their next step. In English and Spanish.
+
+COMPARE YOUR PAY
+See where you stand next to others in the same job in your state: the middle of the pay range, what the top quarter earns, and how far you are from either.
+
+EARN MORE
+Certifications and licenses that pay off in your job, training programs near you, and what people who complete them typically earn.
+
+GET PROMOTED
+Realistic next moves from your job — supervisor roles, better-paid related jobs or a new career — with the steps for each: licenses, skills and training, cheapest first.
+
+KNOW YOUR RIGHTS
+Check your state's minimum wage, overtime, breaks, paid sick leave, and whether you may be treated as a contractor when you should be an employee. If something looks wrong, see what you may be owed and what to do next.
+
+ONE SIMPLE PLAN
+Quick wins and big moves in one list. Tick off steps and share your plan.
+
+WHERE THE INFORMATION COMES FROM
+Every figure in the app shows its source and year. Figures we calculate from public data are marked as Fix My Job estimates. These are all of our sources:
+
+Government sources
+• Pay by job and state, union pay: US Bureau of Labor Statistics — https://www.bls.gov
+• Pay with and without a license, earnings after training, ZIP code to city: US Census Bureau — https://www.census.gov
+• Jobs, skills and related occupations: O*NET, US Department of Labor — https://www.onetcenter.org
+• Cost of living: US Bureau of Economic Analysis — https://www.bea.gov
+• Approved training programs and results: US Department of Labor, Employment and Training Administration — https://www.dol.gov/agencies/eta
+• College programs, tuition and earnings: US Department of Education — https://collegescorecard.ed.gov
+• American Job Centers: CareerOneStop, US Department of Labor — https://www.careeronestop.org
+• Licenses a job requires (FMCSA, CMS, EPA, OSHA, state licensing boards): CareerOneStop — https://www.careeronestop.org/Toolkit/Training/find-licenses.aspx
+• State minimum wage and overtime: US Department of Labor, Wage and Hour Division — https://www.dol.gov/agencies/whd/minimum-wage/state
+• State labor offices and local minimum wages (city and county governments, state labor departments) — https://www.dol.gov/agencies/whd/state/contacts
+• Meal breaks, rest breaks and reporting-time pay (state labor laws) — https://www.dol.gov/agencies/whd/state/meal-breaks
+• Paid sick leave: state labor departments and US Department of Labor, Women's Bureau — https://www.dol.gov/agencies/wb
+• Workplace safety State Plans: OSHA — https://www.osha.gov/stateplans
+• Federal labor laws (FLSA, OSHA, FMLA, NLRA, ADA, ADEA, Title VII): US Department of Labor, EEOC and NLRB — https://www.dol.gov/general/aboutdol/majorlaws
+• Overtime salary level and payroll tax rates: US Department of Labor and Internal Revenue Service — https://www.irs.gov/taxtopics/tc751
+
+Other sources (not government)
+• Online courses: each training provider's own website, linked on every course
+• More courses, and the licenses and certifications they prepare for: Credential Engine (Credential Registry, nonprofit) — https://credentialfinder.org
+• Union directory: national union websites and the AFL-CIO — https://aflcio.org/formaunion
+
+This is the complete list. You can also see it in the app under Menu → Data sources.
+
+YOUR DATA
+We never contact your employer. You can ask us to delete your data at any time from the app's menu.
+
+Fix My Job is not a government service. It gives general information, not legal or financial advice. For official decisions, check with the agency concerned.
+
+Includes information from O*NET OnLine by the US Department of Labor, Employment and Training Administration (USDOL/ETA), used under the CC BY 4.0 license. This product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau.

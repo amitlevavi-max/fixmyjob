@@ -1,0 +1,14 @@
+{
+  "persona": "Andre Torres",
+  "llmJob": "maintenance worker",
+  "goal": "rise_up",
+  "soc": "49-9071",
+  "monthsInJob": 8,
+  "annualPay": 40900,
+  "location": {
+    "state": "WI",
+    "metro": "Milwaukee"
+  },
+  "zip": "53202",
+  "details": true
+}

@@ -1,0 +1,14 @@
+{
+  "persona": "Tanya Fisher",
+  "llmJob": "truck driver",
+  "goal": "rise_up",
+  "soc": "53-3032",
+  "monthsInJob": 36,
+  "annualPay": 55500,
+  "location": {
+    "state": "OR",
+    "metro": "Salem"
+  },
+  "zip": "97301",
+  "details": true
+}

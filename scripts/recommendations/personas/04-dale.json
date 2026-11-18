@@ -1,0 +1,14 @@
+{
+  "persona": "Dale Davis",
+  "llmJob": "janitor",
+  "goal": "earn_more",
+  "soc": "37-2011",
+  "monthsInJob": 30,
+  "annualPay": 34200,
+  "location": {
+    "state": "MD",
+    "metro": "Baltimore"
+  },
+  "zip": "21201",
+  "details": true
+}

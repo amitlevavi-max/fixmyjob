@@ -1,0 +1,9 @@
+{
+  "goal": "rise_up",
+  "otherGoals": ["earn_more"],
+  "job": "nursing assistant",
+  "monthsInJob": 30,
+  "annualPay": 34000,
+  "location": { "state": "TX", "metro": "Houston" },
+  "employer": "Memorial Hermann"
+}

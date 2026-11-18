@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Fix My Job",
+    "slug": "shvoong",
+    "owner": "fixmyjob",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundImage": "./assets/adaptive-icon-bg.png",
+        "backgroundColor": "#EE5A0C"
+      },
+      "package": "com.fixmyjob.app",
+      "versionCode": 2
+    },
+    "scheme": "shvoong",
+    "plugins": [
+      "expo-document-picker",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/logo.png",
+          "imageWidth": 160,
+          "resizeMode": "contain",
+          "backgroundColor": "#112040"
+        }
+      ],
+      "./plugins/withAndroidShareQueries"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a51de014-1734-41d8-8913-bc0e4e306cde"
+      }
+    },
+    "newArchEnabled": false
+  }
+}
