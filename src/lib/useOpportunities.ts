@@ -38,6 +38,7 @@ import { usePathsNear } from './promotionPaths';
 import { useSearchPoint } from './home';
 import { useShortCourses, courseItem, useWebCourses, webCourseItem, courseSearchItem, COURSE_SEARCH_ID, type WebCourseRequest } from './shortCourses';
 import { courseArea } from './home';
+import { useFlaggedCerts, flaggedCertItem } from './flaggedCerts';
 import { useHealthInsurance } from './healthInsurance';
 
 /** The union item with the union's name in the title and the pay difference as its teaser — one object per union, teaser and language (lists compare by identity) */
@@ -107,6 +108,10 @@ export function useOpportunities() {
   const point = useSearchPoint({ homePoint, locationIsMetro, locationMetro, locationState });
   const promoSocs = useMemo(() => Object.entries(moveTargets).filter(([, m]) => m.move === 'promotion').map(([soc]) => soc), [moveTargets]);
   const courses = useShortCourses(courseSocs, matchedOccupation?.soc ?? null, locationState, point, promoSocs, courseMaxMiles);
+  // Certifications CareerOneStop flags In-Demand / Industry-Endorsed for the user's job, each with a real
+  // course near them or online (lib/flaggedCerts, 2026-11-18); at least 50 miles for these longer programs
+  const heldCreds = useMemo(() => Object.entries(credentials).filter(([, has]) => has).map(([n]) => n), [credentials]);
+  const flagged = useFlaggedCerts(matchedOccupation?.soc ?? null, locationState, point, Math.max(50, courseMaxMiles), heldCreds);
   // Nothing valid on the DOL list → an AI web search with the same rules (lib/shortCourses, suggest-course)
   const webRequest = useMemo<WebCourseRequest | null>(() => {
     const job = matchedOccupation?.title ?? profile.role;
@@ -146,12 +151,26 @@ export function useOpportunities() {
     if (!planDecisions[foundCourseId]) setPlanDecision(foundCourseId, d);
     setPlanDecision(COURSE_SEARCH_ID, null);
   }, [foundCourseId, planDecisions[COURSE_SEARCH_ID]]);
+  // One "Get certified" item per flagged certification; not for the job's mandatory credentials (they have their own items)
+  const certItems = useMemo(() => {
+    const mandatory = new Set((career.ownCredentials ?? []).map((c) => c.name.toLowerCase()));
+    // A certification named like the job itself ("Emergency Medical Technician" for EMTs) is how people get into
+    // the job, so someone already doing it almost certainly holds it — not suggested
+    const key = (x: string) => x.toLowerCase().replace(/\(.*?\)/g, ' ').replace(/\b(certification|certificate)\b/g, ' ')
+      .replace(/[^a-z0-9]+/g, '').replace(/s$/, '');
+    const jobKey = matchedOccupation?.title ? key(matchedOccupation.title) : null;
+    return (flagged ?? []).filter((f) => !mandatory.has(f.credential.name.toLowerCase()) && key(f.credential.name) !== jobKey)
+      .map((f) => flaggedCertItem(f, matchedOccupation?.soc ?? null, { state: locationState, stateName: locationStateName }));
+  }, [flagged, career.ownCredentials, matchedOccupation?.soc, matchedOccupation?.title, locationState, locationStateName]);
+  // The Quick-win course is not repeated when it is the course of a "Get certified" item
+  const certCourseIds = new Set(certItems.map((o) => o.course?.id));
   // Ask your employer for health insurance (lib/healthInsurance)
   const health = useHealthInsurance();
   const dataItems = [
     ...rights.suggested,
     ...(health.suggested ? [health.item] : []),
-    ...courseItems.slice(0, 1),
+    ...courseItems.slice(0, 1).filter((o) => !certCourseIds.has(o.course?.id)),
+    ...certItems,
     ...career.credentialItems, ...pickPromotions(career.promotions, planDecisions), ...movesToSuggest(career.changes),
   ];
   /** The older pay-check items: replaced by the rights items (minimum wage now checked for everyone) */
@@ -175,7 +194,7 @@ export function useOpportunities() {
   // The generic "certificate in your job" also not when the job has mandatory credentials
   // (the missing-credential items carry the same Census gap)
   const hideGeneric = (o: Opportunity) =>
-    (o.id === 'get-certified' && (career.ownCredentials?.length ?? 0) > 0)
+    (o.id === 'get-certified' && ((career.ownCredentials?.length ?? 0) > 0 || certItems.length > 0))
     || OLD_CLAIM_IDS.includes(o.id)
     || !concrete(o);
   /** The union item names the union we found ("Join the Teamsters") */
@@ -197,7 +216,7 @@ export function useOpportunities() {
   ];
   const seen = new Set<string>();
   const opportunities = allByGoal.flatMap((x) => x.opportunities).filter((o) => !seen.has(o.id) && !!seen.add(o.id));
-  const all = [...rights.items, health.item, ...career.all, ...courseItems, ...rise, ...opportunityCatalog].map(localizeOpportunity).map(named);
+  const all = [...rights.items, health.item, ...career.all, ...courseItems, ...certItems, ...rise, ...opportunityCatalog].map(localizeOpportunity).map(named);
 
   // ── Combined yearly boost ────────────────────────────────────────────────
   const boostOf = (list: Opportunity[]) => {

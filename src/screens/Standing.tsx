@@ -45,6 +45,8 @@ import { titleForGoal, type Opportunity } from '../data/opportunityCatalog';
 import { Colors, Fonts, Radii } from '../theme';
 import { shortJobName } from '../lib/format';
 import { t, isSpanish, tSource } from '../i18n';
+import CosFlagTag, { cosRowStyle } from '../components/CosFlagTag';
+import { cosFlagsOf } from '../lib/cosFlags';
 
 type Nav = StackNavigationProp<RootStackParamList>;
 
@@ -397,9 +399,12 @@ export default function StandingScreen() {
                   const g = display(o);
                   const inPlan = planDecisions[o.id] === 'in_plan';
                   return (
-                    <View key={o.id} style={styles.planRow}>
+                    <View key={o.id} style={[styles.planRow, cosFlagsOf(o) ? cosRowStyle : null]}>
                       <Icon name={inPlan ? 'f:check-circle' : 'f:eye'} size={16} color={inPlan ? Colors.positive : Colors.accentHi} />
-                      <Text style={styles.planItem} numberOfLines={1}>{pv.titleOf(o)}</Text>
+                      <View style={{ flex: 1 }}>
+                        <CosFlagTag opp={o} />
+                        <Text style={styles.planItem} numberOfLines={1}>{pv.titleOf(o)}</Text>
+                      </View>
                       {g.gainAmount > 0 ? <Text style={styles.planGain}>+{money(g.gainAmount)}</Text> : null}
                     </View>
                   );

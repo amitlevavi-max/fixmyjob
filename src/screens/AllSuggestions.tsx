@@ -19,6 +19,7 @@ import { Headline } from '../components/Typography';
 import { Colors, Fonts } from '../theme';
 import { t, isSpanish } from '../i18n';
 import MoveTag from '../components/MoveTag';
+import CosFlagTag from '../components/CosFlagTag';
 
 type Nav = StackNavigationProp<RootStackParamList>;
 type Filter = 'all' | 'in_plan' | 'pending' | 'not_pursuing';
@@ -73,6 +74,7 @@ export default function AllSuggestionsScreen() {
                 />
                 <View style={{ flex: 1 }}>
                   <MoveTag opp={o} />
+                  <CosFlagTag opp={o} />
                   <Text style={styles.title}>{v.titleOf(o)}</Text>
                   {o.teaser ? <Text style={styles.sub}>{o.teaser}</Text> : null}
                   <Text style={styles.sub}>{bits}</Text>

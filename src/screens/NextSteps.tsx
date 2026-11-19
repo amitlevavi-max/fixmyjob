@@ -37,6 +37,8 @@ import { Headline, Eyebrow, Lead } from '../components/Typography';
 import { Colors, Fonts, Radii } from '../theme';
 import { t } from '../i18n';
 import MoveTag from '../components/MoveTag';
+import CosFlagTag from '../components/CosFlagTag';
+import CosFlagNote from '../components/CosFlagNote';
 import CourseDetails from '../components/CourseDetails';
 import WidenCourseSearch from '../components/WidenCourseSearch';
 import { COURSE_PREFIX, COURSE_SEARCH_ID, courseSearchItem } from '../lib/shortCourses';
@@ -189,6 +191,7 @@ export default function NextStepsScreen() {
         <Eyebrow color={Colors.positive}>{t('+{amount}/yr potential', { amount: `$${g.gainAmount.toLocaleString()}` })}</Eyebrow>
       )}
       <MoveTag opp={opp} style={{ marginTop: 2 }} />
+      <CosFlagTag opp={opp} style={{ marginTop: 2 }} />
       <Headline>{titleForGoal(opp, openedFor ?? goalsByImportance(goals).map((g) => g.id))}</Headline>
       <Lead style={{ marginBottom: g.source ? 4 : 12 }}>{g.gain}</Lead>
       {g.source ? <Text style={styles.source}>{t('Source: {source}', { source: g.source })}</Text> : null}
@@ -210,6 +213,7 @@ export default function NextStepsScreen() {
       {opp.id === HEALTH_ID && <HealthCoverageQuestion />}
       {opp.id === UNION_ID && <UnionMembershipQuestion />}
       {opp.id === 'move-high-wage' && <RelocationExplorer />}
+      <CosFlagNote opp={opp} />
       {opp.course && <CourseDetails course={opp.course} />}
       {opp.courseSearch && <WidenCourseSearch searching={courseSearching} />}
 

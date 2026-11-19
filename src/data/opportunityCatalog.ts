@@ -68,6 +68,8 @@ export interface Opportunity {
   isManager?: boolean;
   /** Short-course items: the approved program (lib/shortCourses) */
   course?: import('../lib/shortCourses').ShortCourse;
+  /** CareerOneStop flags of the certification this item is about (lib/cosFlags, lib/flaggedCerts) */
+  cosFlags?: import('../lib/cosFlags').CosFlags;
   /** Stand-in item when no short course was found: its screen asks for ZIP and driving distance */
   courseSearch?: boolean;
   /** Promotions: is there a training or college program for the job near the user (lib/promotionPaths)? undefined = still checking */

@@ -25,6 +25,7 @@ import {
   certificationsFirst, titleForGoal, effortOf, effortHoursOf, EFFORT_ORDER,
   type Effort, type Opportunity,
 } from '../data/opportunityCatalog';
+import { cosFlagRank } from './cosFlags';
 
 /** Pay below the legal minimum: always first in the user's list */
 const MIN_WAGE_ID = 'right:minimum_wage';
@@ -52,7 +53,8 @@ export function usePlanView() {
   return useMemo(() => {
     /** One goal's suggestions: best gain first, certifications before relocation, a legal pay problem on top */
     const rank = (opps: Opportunity[]) => {
-      const byGain = certificationsFirst([...opps].sort((a, b) => display(b).gainAmount - display(a).gainAmount));
+      // Certifications CareerOneStop flags come first, even before items worth more (Amit, 2026-11-18)
+      const byGain = certificationsFirst([...opps].sort((a, b) => cosFlagRank(a) - cosFlagRank(b) || display(b).gainAmount - display(a).gainAmount));
       const claim = shortfall > 0 ? opps.find((o) => o.id === MIN_WAGE_ID) : undefined;
       return claim ? [claim, ...byGain.filter((o) => o !== claim)] : byGain;
     };
@@ -88,6 +90,7 @@ export function usePlanView() {
     };
     const byValue = (a: Opportunity, b: Opportunity) =>
       goalTier(a) - goalTier(b)
+      || cosFlagRank(a) - cosFlagRank(b)        // in demand, then industry endorsed — ahead of higher pay figures
       || display(b).gainAmount - display(a).gainAmount
       || effortHoursOf(a) - effortHoursOf(b)
       || titleOf(a).localeCompare(titleOf(b));

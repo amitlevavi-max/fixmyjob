@@ -64,7 +64,9 @@ export interface ShortCourse {
   /** "Last updated" on Credential Engine */
   ce_updated_at?: string | null;
   /** Licenses / certifications the course prepares for (Credential Engine registry, matched by name) */
-  leads_to?: Array<{ name: string; issuer: string; kind: string; finder_url: string | null }> | null;
+  leads_to?: Array<{ name: string; issuer: string; kind: string; finder_url: string | null;
+    /** CareerOneStop flags of that credential (lib/cosFlags) */
+    in_demand?: boolean; industry_endorsed?: boolean; cos_checked_at?: string | null }> | null;
   /** Set when the course was found by the web search, not on the DOL list */
   web?: WebCourse & { foundAt: string };
 }

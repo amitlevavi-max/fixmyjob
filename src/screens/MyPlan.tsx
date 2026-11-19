@@ -31,6 +31,8 @@ import type { Opportunity } from '../data/opportunityCatalog';
 import { Colors, Fonts, Radii } from '../theme';
 import { t } from '../i18n';
 import MoveTag from '../components/MoveTag';
+import CosFlagTag, { cosRowStyle } from '../components/CosFlagTag';
+import { cosFlagsOf } from '../lib/cosFlags';
 
 type Nav = StackNavigationProp<RootStackParamList>;
 const money = (n: number) => `$${Math.round(n).toLocaleString()}`;
@@ -111,13 +113,14 @@ export default function MyPlanScreen() {
     return (
       <TouchableOpacity
         key={o.id}
-        style={[styles.row, last && { borderBottomWidth: 0 }]}
+        style={[styles.row, last && { borderBottomWidth: 0 }, cosFlagsOf(o) ? { ...cosRowStyle, marginLeft: 0 } : null]}
         onPress={() => open(o)}
         activeOpacity={0.75}
       >
         <Icon name={inPlan ? 'f:check-circle' : 'f:eye'} size={18} color={inPlan ? Colors.positive : Colors.accentHi} />
         <View style={{ flex: 1 }}>
           <MoveTag opp={o} />
+          <CosFlagTag opp={o} />
           <Text style={styles.rowTitle}>{v.titleOf(o)}</Text>
           {o.teaser ? <Text style={styles.teaser}>{o.teaser}</Text> : null}
           {goals.length > 0 && (

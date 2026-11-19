@@ -471,7 +471,9 @@ try {
   const { count: oldCourses, error: e1 } = await db.from('training_programs').delete({ count: 'exact' })
     .eq('source', 'credential_engine').lt('imported_at', importedAt);
   if (e1) throw new Error(`cleanup training_programs: ${e1.message}`);
-  const { count: oldCreds, error: e2 } = await db.from('credentials').delete({ count: 'exact' }).lt('imported_at', importedAt);
+  // Only Credential Engine's own credentials: records from CareerOneStop (source 'careeronestop') are kept (2026-11-18)
+  const { count: oldCreds, error: e2 } = await db.from('credentials').delete({ count: 'exact' })
+    .eq('source', 'credential_engine').lt('imported_at', importedAt);
   if (e2) throw new Error(`cleanup credentials: ${e2.message}`);
   // Mark DOL programs that are also on Credential Engine: clear earlier marks, then 500 at a time
   // (one call for all of them hit Supabase's statement timeout)
@@ -484,8 +486,10 @@ try {
     process.stdout.write(`\rDOL programs marked: ${Math.min(i + 500, rowsToMark.length)} / ${rowsToMark.length}`);
   }
   process.stdout.write('\n');
-  // Course → credential links: replace all
-  const { error: e4 } = await db.from('course_credentials').delete().neq('course_id', '');
+  // Course → credential links
+  // Only the links this import makes; links made by name/acronym for CareerOneStop certifications
+  // (match_method cos_name / cos_acronym, function cos_link_courses) are kept (2026-11-18)
+  const { error: e4 } = await db.from('course_credentials').delete().in('match_method', ['issuer_name', 'state_license']);
   if (e4) throw new Error(`clear course_credentials: ${e4.message}`);
   await upsertAll('course_credentials', links, 'course_id,credential_id', 2000);
   // Licenses without an occupation code: match the license name to occupation titles (O*NET / BLS)

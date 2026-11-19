@@ -629,5 +629,22 @@ const es: Record<string, string> = {
   'Farm workers in California, New York, Washington and Oregon': 'Trabajadores del campo en California, Nueva York, Washington y Oregón',
   'Family child care providers in California': 'Proveedores de cuidado infantil en casa en California',
   'Family child care providers in Washington': 'Proveedores de cuidado infantil en casa en Washington',
+
+  // CareerOneStop flags on certifications (2026-11-18)
+  'IN DEMAND': 'MUY SOLICITADA',
+  'INDUSTRY ENDORSED': 'RESPALDADA POR LA INDUSTRIA',
+  'In demand': 'Muy solicitada',
+  'Industry endorsed': 'Respaldada por la industria',
+  'this certification': 'esta certificación',
+  'This course prepares you for {cert}.': 'Este curso te prepara para {cert}.',
+  'CareerOneStop, from the U.S. Department of Labor, marks {cert} as in demand: employers often ask for it in online job postings.': 'CareerOneStop, del Departamento de Trabajo de EE. UU., marca {cert} como muy solicitada: los empleadores la piden a menudo en sus anuncios de empleo en internet.',
+  'CareerOneStop, from the U.S. Department of Labor, marks {cert} as industry endorsed: a major industry association, not only the organization that issues it, recommends it.': 'CareerOneStop, del Departamento de Trabajo de EE. UU., marca {cert} como respaldada por la industria: una asociación importante del sector, no solo la organización que la otorga, la recomienda.',
+  'checked {date}': 'revisado el {date}',
+  'Get certified: {cert}': 'Certifícate: {cert}',
+  'the certifying organization': 'la organización que la otorga',
+  'Pass the {cert} exam': 'Aprueba el examen de {cert}',
+  'The course prepares you for it. {issuer} issues the certification — their page explains how to sign up for the exam.': 'El curso te prepara para el examen. {issuer} otorga la certificación; su página explica cómo inscribirte en el examen.',
+  '{issuer} issues this certification. The course below prepares you for it.': '{issuer} otorga esta certificación. El curso de abajo te prepara para obtenerla.',
+  '{n} courses near you or online prepare for it. Courses with past-student results and a lower cost come first.': '{n} cursos cerca de ti o en línea te preparan. Primero aparecen los que publican resultados de estudiantes anteriores y cuestan menos.',
 };
 export default es;
