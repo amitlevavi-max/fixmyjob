@@ -240,13 +240,12 @@ legend { font-weight: 600; margin-bottom: 8px; }
   transform: rotate(-3deg); transform-origin: left bottom;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
-.hero-titles { flex: 1; min-width: 0; }
-.hero-tagline {
-  margin: 16px 0 0; text-wrap: balance;
+/* Brand tagline, in the lead spot under the hero (replaced the industry list 2026-11-20) */
+.brand-tagline {
+  max-width: none; text-wrap: balance;
   font-family: var(--display); font-style: italic; font-weight: 800;
-  font-size: clamp(16px, 2.1vw, 24px); line-height: 1.15; letter-spacing: 0.05em; text-transform: uppercase;
-  color: var(--slate); transform: rotate(-3deg); transform-origin: left bottom;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  font-size: clamp(19px, 2.2vw, 26px); line-height: 1.15; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--slate);
 }
 .free-stamp {
   flex: none; width: 128px; height: 128px; border-radius: 50%;
