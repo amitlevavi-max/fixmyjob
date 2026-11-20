@@ -36,7 +36,7 @@ export default function Logo({ size = 'lg', tagline = false, stacked }: LogoProp
           {t('FIX MY')} <Text style={{ color: Colors.accent }}>{t('JOB')}</Text>
         </Text>
         {tagline && (
-          <Text style={[styles.tag, { fontSize: s.tag }]}>{t('REAL PEOPLE. BETTER MOVES.')}</Text>
+          <Text style={[styles.tag, { fontSize: s.tag }]}>{t('BECAUSE HARD-WORKING PEOPLE DESERVE TO GET AHEAD.')}</Text>
         )}
       </View>
     </View>

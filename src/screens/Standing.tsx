@@ -15,6 +15,7 @@ import Svg, {
   Path, Defs, LinearGradient as SvgGradient, Stop, Circle, Line, Text as SvgText,
 } from 'react-native-svg';
 import { RootStackParamList } from '../navigation/AppNavigator';
+import { track, suggestionProps } from '../lib/analytics';
 import { useUserStore } from '../store/userStore';
 import Screen from '../components/Screen';
 import TopBar from '../components/TopBar';
@@ -299,6 +300,7 @@ export default function StandingScreen() {
   };
   const addPrimary = () => {
     if (!primary) return;
+    track('suggestion_added', { ...suggestionProps(primary, goal), from: 'standing' });
     setPlanDecision(primary.id, 'in_plan');
     goTab(navigation, 'Plan');
   };

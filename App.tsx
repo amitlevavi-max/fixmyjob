@@ -27,6 +27,10 @@ import { useAuthStore } from './src/store/authStore';
 import { useUserStore } from './src/store/userStore';
 import { loadProfileRow, discardPendingProfileSave } from './src/lib/profileSync';
 import { loadSavedLanguage, rememberLanguage, useLangStore } from './src/i18n';
+import { initAnalytics, identifyUser } from './src/lib/analytics';
+
+// Usage analytics (off until a PostHog key is set in src/config/analytics.ts)
+initAnalytics();
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -62,6 +66,7 @@ export default function App() {
       restoredFor.current = null;
     }
     currentUser.current = userId;
+    identifyUser(userId);                   // analytics: events belong to this user (null = signed out)
   }
 
   // Restore everything the user saved (location, pay, schedule…) once per user.

@@ -44,6 +44,7 @@ import WidenCourseSearch from '../components/WidenCourseSearch';
 import { COURSE_PREFIX, COURSE_SEARCH_ID, courseSearchItem } from '../lib/shortCourses';
 import HealthCoverageQuestion from '../components/HealthCoverageQuestion';
 import { HEALTH_ID } from '../lib/healthInsurance';
+import { track, suggestionProps } from '../lib/analytics';
 
 type Nav = StackNavigationProp<RootStackParamList, 'NextSteps'>;
 type Route = RouteProp<RootStackParamList, 'NextSteps'>;
@@ -89,6 +90,7 @@ export default function NextStepsScreen() {
   // First time this suggestion is opened (clears its "New" badge)
   useEffect(() => {
     if (opp && !planMeta[opp.id]?.firstSeen) setPlanMeta(opp.id, { firstSeen: new Date().toISOString() });
+    if (opp) track('suggestion_opened', { ...suggestionProps(opp, openedFor), in_plan: planDecisions[opp.id] === 'in_plan' });
   }, [opp?.id]);
 
 
@@ -113,16 +115,19 @@ export default function NextStepsScreen() {
   function rate(r: 'not' | 'somewhat' | 'very') {
     setPlanMeta(opp!.id, { rating: r });
     setChangingRating(false);
+    track('suggestion_rated', { ...suggestionProps(opp!, openedFor), rating: r });
   }
 
   /** "Not for me" asks why (optional) before saving */
   function notForMe(reason?: string) {
     setAskReason(false);
     if (reason) setPlanMeta(opp!.id, { reason });
+    track('suggestion_declined', { ...suggestionProps(opp!, openedFor), reason: reason ?? null });
     decide('not_pursuing');
   }
 
   function decide(d: 'in_plan' | 'not_pursuing') {
+    if (d === 'in_plan') track('suggestion_added', { ...suggestionProps(opp!, openedFor), from: 'suggestion' });
     setPlanDecision(opp!.id, d);
     navigation.goBack();
   }
@@ -130,6 +135,7 @@ export default function NextStepsScreen() {
   /** The user already holds this credential: remember it (it then leaves the plan and suggestions) */
   function alreadyHave() {
     if (!opp?.credentialName) return;
+    track('suggestion_already_have', suggestionProps(opp, openedFor));
     setCredentialAnswer(opp.credentialName, true);
     if (planDecisions[opp.id]) setPlanDecision(opp.id, null);
     navigation.goBack();

@@ -11,7 +11,7 @@ import { t } from '../i18n';
 
 export default function ShareAppButton({ size = 36 }: { size?: number }) {
   async function share() {
-    const text = t('Try Fix My Job: because hard-working American people deserve to get ahead');
+    const text = t('Try Fix My Job: because hard-working people deserve to get ahead');
     try {
       // iOS shows the link as its own item; Android needs it inside the message
       await Share.share(

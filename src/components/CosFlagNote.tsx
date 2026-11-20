@@ -1,7 +1,8 @@
 /**
  * What "In demand" / "Industry endorsed" means, on the item's screen (Amit, 2026-11-18), with the source
  * (CareerOneStop, U.S. Dept. of Labor) and when it was checked. Worded to what CareerOneStop actually says:
- * it publishes no posting counts or dates, so the text doesn't claim any.
+ * it publishes no per-certification counts, so the text uses only its overall method figures
+ * (2M+ NLx postings, ~500 of 6,300+ certifications flagged; CareerOneStop newsletter spring 2025 and blog).
  */
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
@@ -26,13 +27,13 @@ export default function CosFlagNote({ opp }: { opp: Opportunity }) {
       {f.inDemand ? (
         <Text style={styles.text}>
           <Text style={styles.bold}>{t('In demand')}: </Text>
-          {t('CareerOneStop, from the U.S. Department of Labor, marks {cert} as in demand: employers often ask for it in online job postings.', { cert })}
+          {t('CareerOneStop (U.S. Department of Labor) checked over 2 million U.S. job postings to see which certifications employers ask for. {cert} is among the top 8%: about 500 of the 6,300+ certifications they track.', { cert })}
         </Text>
       ) : null}
       {f.endorsed ? (
         <Text style={styles.text}>
           <Text style={styles.bold}>{t('Industry endorsed')}: </Text>
-          {t('CareerOneStop, from the U.S. Department of Labor, marks {cert} as industry endorsed: a major industry association, not only the organization that issues it, recommends it.', { cert })}
+          {t('A major trade association, not the company that created the certification, vouches for it.')}
         </Text>
       ) : null}
       <Text style={styles.source}>

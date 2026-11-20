@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { resetToTabs } from '../../lib/nav';
+import { track } from '../../lib/analytics';
 import { RootStackParamList } from '../../navigation/AppNavigator';
 import { useAuthStore } from '../../store/authStore';
 import { useUserStore } from '../../store/userStore';
@@ -30,12 +31,17 @@ export default function SignInScreen() {
   const [showPassword, setShowPassword] = useState(false);
 
   async function handleSignIn() {
+    track('signin_submit');
     clearError();
     if (!email.trim()) return Alert.alert(t('Missing field'), t('Please enter your email.'));
     if (!password) return Alert.alert(t('Missing field'), t('Please enter your password.'));
 
     const success = await signIn(email.trim().toLowerCase(), password);
-    if (!success) return;
+    if (!success) {
+      track('login_failed', { method: 'email', reason: useAuthStore.getState().error ?? 'error' });
+      return;
+    }
+    track('login_succeeded', { method: 'email' });
 
     // Try to load existing profile from Supabase
     try {
@@ -67,7 +73,7 @@ export default function SignInScreen() {
 
   return (
     <Screen>
-      <TopBar onBack={() => navigation.goBack()} />
+      <TopBar onBack={() => { track('back_click', { step: 'signin' }); navigation.goBack(); }} />
 
       <Eyebrow>{t('Good to see you')}</Eyebrow>
       <Headline accent={t('back')}>{t('Welcome')}</Headline>

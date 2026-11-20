@@ -28,6 +28,7 @@ import { formatTenure, money } from '../lib/format';
 import { GOALS } from './GoalPicker';
 import { questionFor, satisfactionLabel } from './JobSatisfaction';
 import { t } from '../i18n';
+import { track } from '../lib/analytics';
 import { useOpportunities } from '../lib/useOpportunities';
 import LanguageToggle from '../components/LanguageToggle';
 import { useRightsAnswer, RIGHTS_KEYS } from './RightsAnswers';
@@ -40,11 +41,16 @@ const OVERTIME: Record<number, string> = {
   0: 'overtime not paid', 1: 'overtime at normal rate', 1.25: 'overtime ×1.25', 1.5: 'overtime ×1.5', 2: 'overtime ×2',
 };
 
-interface RowProps { label: string; value: string | null; sub?: string | null; onPress: () => void }
+/** section / field: stable names for analytics (profile_edit_click), not shown */
+interface RowProps { label: string; value: string | null; sub?: string | null; onPress: () => void; section: string; field: string }
 
-function Row({ label, value, sub, onPress }: RowProps) {
+function Row({ label, value, sub, onPress, section, field }: RowProps) {
+  const press = () => {
+    track('profile_edit_click', { section, field, action: value ? 'edit' : 'add' });
+    onPress();
+  };
   return (
-    <TouchableOpacity style={styles.row} onPress={onPress} activeOpacity={0.75}>
+    <TouchableOpacity style={styles.row} onPress={press} activeOpacity={0.75}>
       <View style={{ flex: 1 }}>
         <Text style={styles.rowLabel}>{label}</Text>
         <Text style={[styles.rowValue, !value && styles.rowEmpty]} numberOfLines={2}>{value ?? t('Not set yet')}</Text>
@@ -118,18 +124,18 @@ export default function ProfileScreen() {
       <SectionLabel icon="f:briefcase">{t('My work')}</SectionLabel>
       <Card padded={false} style={styles.card}>
         <Row
-          label={t('Job')}
+          section="my_work" field="job" label={t('Job')}
           value={occTitle ? t(occTitle) : p.role ?? null}
           sub={p.role && occTitle && p.role.toLowerCase() !== occTitle.toLowerCase() ? t('You described it as "{role}"', { role: p.role }) : null}
           onPress={() => navigation.navigate('ManualEntry', { edit: 'job' })}
         />
-        <Row label={t('Time in this job')} value={formatTenure(p)} onPress={() => navigation.navigate('ManualEntry', { edit: 'tenure' })} />
-        <Row label={t('Pay')} value={p.annualEarnings ? t('{amount}/yr', { amount: money(p.annualEarnings) }) : null} onPress={() => navigation.navigate('ManualEntry', { edit: 'pay' })} />
-        <Row label={t('Employer')} value={p.employer ?? null} onPress={() => navigation.navigate('ManualEntry', { edit: 'employer' })} />
-        <Row label={t('Health insurance')} value={coverageSummary(s.healthCoverage)} onPress={() => navigation.navigate('HealthCoverage')} />
-        <Row label={t('Union')} value={membershipSummary(s.unionMembership)} onPress={() => navigation.navigate('UnionMembership')} />
+        <Row section="my_work" field="time_in_job" label={t('Time in this job')} value={formatTenure(p)} onPress={() => navigation.navigate('ManualEntry', { edit: 'tenure' })} />
+        <Row section="my_work" field="pay" label={t('Pay')} value={p.annualEarnings ? t('{amount}/yr', { amount: money(p.annualEarnings) }) : null} onPress={() => navigation.navigate('ManualEntry', { edit: 'pay' })} />
+        <Row section="my_work" field="employer" label={t('Employer')} value={p.employer ?? null} onPress={() => navigation.navigate('ManualEntry', { edit: 'employer' })} />
+        <Row section="my_work" field="health_insurance" label={t('Health insurance')} value={coverageSummary(s.healthCoverage)} onPress={() => navigation.navigate('HealthCoverage')} />
+        <Row section="my_work" field="union" label={t('Union')} value={membershipSummary(s.unionMembership)} onPress={() => navigation.navigate('UnionMembership')} />
         <Row
-          label={t(questionFor(s.focusGoal).short)}
+          section="my_work" field="satisfaction" label={t(questionFor(s.focusGoal).short)}
           value={satisfactionLabel(s.focusGoal, focusSatisfaction)}
           onPress={() => navigation.navigate('JobSatisfaction', { edit: true })}
         />
@@ -137,9 +143,9 @@ export default function ProfileScreen() {
 
       <SectionLabel icon="f:map-pin">{t('Where I work')}</SectionLabel>
       <Card padded={false} style={styles.card}>
-        <Row label={t('Location')} value={s.locationLabel} onPress={() => setShowLocation(true)} />
+        <Row section="where_i_work" field="location" label={t('Location')} value={s.locationLabel} onPress={() => setShowLocation(true)} />
         <Row
-          label={t('ZIP code')}
+          section="where_i_work" field="zip" label={t('ZIP code')}
           value={s.homePoint ? s.homePoint.zip : null}
           sub={s.homePoint?.city ? t('Closest city: {city}', { city: `${s.homePoint.city}, ${s.homePoint.state}` }) : t('Used to find training near you')}
           onPress={() => setShowZip((v) => !v)}
@@ -150,22 +156,22 @@ export default function ProfileScreen() {
       <SectionLabel icon="f:target">{t('My goals')}</SectionLabel>
       <Card padded={false} style={styles.card}>
         <Row
-          label={t('Main goal')}
+          section="my_goals" field="main_goal" label={t('Main goal')}
           value={goal ? t(goal.label) : null}
           onPress={() => navigation.navigate('GoalPicker', { edit: true })}
         />
         <Row
-          label={t('Other goals')}
+          section="my_goals" field="other_goals" label={t('Other goals')}
           value={otherGoals || null}
           onPress={() => navigation.navigate('GoalPicker', { edit: true, others: true })}
         />
         <Row
-          label={t('Next role')}
+          section="my_goals" field="next_role" label={t('Next role')}
           value={promotion?.title ?? null}
           onPress={() => (promotion ? navigation.navigate('NextSteps', { opportunityId: promotion.id }) : navigation.navigate('AllSuggestions'))}
         />
         {careerChange && (
-          <Row label={t('Career change')} value={careerChange.title}
+          <Row section="my_goals" field="career_change" label={t('Career change')} value={careerChange.title}
             onPress={() => navigation.navigate('NextSteps', { opportunityId: careerChange.id })} />
         )}
       </Card>
@@ -173,7 +179,7 @@ export default function ProfileScreen() {
       <SectionLabel icon="f:award">{t('Skills & certifications')}</SectionLabel>
       <Card padded={false} style={styles.card}>
         <Row
-          label={t('Required for my job')}
+          section="skills_certifications" field="certifications" label={t('Certifications I have')}
           value={heldCreds.length ? heldCreds.join(', ') : null}
           onPress={() => navigation.navigate('Credentials', { edit: true })}
         />
@@ -182,20 +188,20 @@ export default function ProfileScreen() {
       <SectionLabel icon="f:clock">{t('Work conditions')}</SectionLabel>
       <Card padded={false} style={styles.card}>
         <Row
-          label={t('Hours and overtime')}
+          section="work_conditions" field="hours_overtime" label={t('Hours and overtime')}
           value={sched ? `${t('{n} h/week', { n: sched.hoursPerWeek })} · ${OVERTIME[sched.overtimeMultiplier] ? t(OVERTIME[sched.overtimeMultiplier]) : t('overtime ×{x}', { x: sched.overtimeMultiplier })}` : null}
           onPress={() => navigation.navigate('NextSteps', { opportunityId: 'minimum-wage-check' })}
         />
         {(s.goals.some((g) => g.id === 'claim_rights') || rightsAnswered > 0) && (
           <Row
-            label={t('Work and rights')}
+            section="work_conditions" field="rights_answers" label={t('Work and rights')}
             value={rightsAnswered ? t('{n} of {m} questions answered', { n: rightsAnswered, m: RIGHTS_KEYS.length }) : null}
             sub={t('See and change every answer')}
             onPress={() => navigation.navigate('RightsAnswers')}
           />
         )}
         <Row
-          label={t('Physical strain')}
+          section="work_conditions" field="physical_strain" label={t('Physical strain')}
           value={strain ? (strain === 1 ? t('1 concern noted') : t('{n} concerns noted', { n: strain })) : null}
           onPress={() => navigation.navigate('EnvironmentFactors', { edit: true })}
         />
@@ -204,7 +210,7 @@ export default function ProfileScreen() {
       <SectionLabel icon="f:settings">{t('Preferences')}</SectionLabel>
       <Card padded={false} style={styles.card}>
         <Row
-          label={t('Job offers')}
+          section="preferences" field="job_offers" label={t('Job offers')}
           value={s.wantsJobOffers == null ? null : s.wantsJobOffers ? `${t('Yes (coming soon)')}${email ? ` · ${email}` : ''}` : t('No')}
           onPress={() => navigation.navigate('JobOfferOptIn', { edit: true })}
         />

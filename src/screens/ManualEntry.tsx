@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
+import { useNavigation, useRoute, RouteProp, useFocusEffect } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../navigation/AppNavigator';
 import { useUserStore } from '../store/userStore';
@@ -26,6 +26,7 @@ import Stepper from '../components/Stepper';
 import { formatMonths, formatYears, money } from '../lib/format';
 import { fetchCredentials, mandatoryOnly } from '../lib/careerData';
 import { t } from '../i18n';
+import { track, trackScreen, modeOf } from '../lib/analytics';
 
 type Nav = StackNavigationProp<RootStackParamList, 'ManualEntry'>;
 
@@ -104,6 +105,28 @@ export default function ManualEntryScreen() {
 
   const [checking, setChecking] = useState(false);
 
+  // ── Analytics: each question here counts as its own screen ───────────────
+  const STEP_NAMES = ['', 'job', 'tenure', 'pay', 'employer'];
+  const stepName = pickingOccupation ? 'job_match' : STEP_NAMES[step] ?? String(step);
+  const mode = modeOf(editing);
+  // Not while checking (the job question shows for a moment while the app looks
+  // up the job's certifications) · back from Credentials counts as the tenure question
+  const screenName = checking ? null : params?.resume === 'tenure' ? 'tenure' : stepName;
+  useFocusEffect(useCallback(() => {
+    if (screenName) trackScreen(`ManualEntry:${screenName}`, { mode });
+  }, [screenName, mode]));
+
+  /** "Which job is closest?" pick (null = cleared because the user is typing) */
+  function selectOccupation(soc: string | null) {
+    setOccupationSoc(soc);
+    if (soc) track('occupation_selected', { soc, title: soc === NO_MATCH ? null : knownOccupation(soc)?.title ?? null, mode });
+  }
+
+  /** Pay changed by the slider (once per drag) or the −/+ buttons */
+  function payAdjusted(method: 'slider' | 'stepper', from: number, to: number) {
+    if (from !== to) track('pay_adjusted', { method, direction: to > from ? 'up' : 'down', mode });
+  }
+
   /** After Q1: use a clear match directly, otherwise ask which is closest. */
   async function resolveOccupation() {
     const typed = jobTitle.trim();
@@ -153,6 +176,9 @@ export default function ManualEntryScreen() {
   }, [params?.resume]);
 
   async function handleNext() {
+    if (!editing && step === 3 && !pickingOccupation) track('see_where_i_stand_click');
+    else track('continue_click', { step: stepName, mode });
+    if (step === 1 && !pickingOccupation && jobTitle.trim()) track('job_title_entered', { title: jobTitle.trim(), mode });
     if (step === 1 && !pickingOccupation) {
       await resolveOccupation();
     } else if (pickingOccupation) {
@@ -225,6 +251,7 @@ export default function ManualEntryScreen() {
 
   // Back steps through the questions before leaving the screen
   function handleBack() {
+    track('back_click', { step: stepName, mode });
     if (pickingOccupation) setPickingOccupation(false);
     else if (!editing && step > 1) setStep(step - 1);
     else navigation.goBack();
@@ -299,7 +326,7 @@ export default function ManualEntryScreen() {
               query={jobTitle.trim()}
               category={jobCategory}
               selected={occupationSoc}
-              onSelect={setOccupationSoc}
+              onSelect={selectOccupation}
               text={occupationText}
               onTextChange={setOccupationText}
               maxHits={maxHits}
@@ -323,7 +350,7 @@ export default function ManualEntryScreen() {
                 key={c}
                 label={t(c)}
                 selected={jobCategory === c}
-                onPress={() => setJobCategory(c)}
+                onPress={() => { setJobCategory(c); track('job_category_selected', { category: c, mode }); }}
               />
             ))}
           </View>
@@ -354,6 +381,7 @@ export default function ManualEntryScreen() {
                     compact
                     selected={selected}
                     onPress={() => {
+                      track('tenure_selected', { range: r.key, mode });
                       setTenureKey(r.key);
                       setTenureMonths(r.min !== undefined ? Math.round((r.min + r.max!) / 2) : null);
                       setTenureYearsPick(r.minYears !== undefined ? Math.round((r.minYears + r.maxYears!) / 2) : null);
@@ -415,6 +443,7 @@ export default function ManualEntryScreen() {
               step={PAY_STEP}
               onChange={setPay}
               onTouched={() => setPayTouched(true)}
+              onRelease={(from, to) => payAdjusted('slider', from, to)}
               minLabel={money(PAY_MIN)}
               maxLabel={`${money(PAY_MAX)}+`}
             />
@@ -426,7 +455,7 @@ export default function ManualEntryScreen() {
                 min={PAY_MIN}
                 max={PAY_MAX}
                 step={PAY_STEP}
-                onChange={(v) => { setPay(v); setPayTouched(true); }}
+                onChange={(v) => { payAdjusted('stepper', pay, v); setPay(v); setPayTouched(true); }}
                 format={money}
               />
             </View>

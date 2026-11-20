@@ -13,6 +13,7 @@ import OptionCard from '../components/OptionCard';
 import { Headline, Lead } from '../components/Typography';
 import { Colors, Fonts } from '../theme';
 import { t } from '../i18n';
+import { track, modeOf } from '../lib/analytics';
 
 type Nav = StackNavigationProp<RootStackParamList, 'GoalPicker'>;
 
@@ -46,6 +47,7 @@ function MainGoal({ editing }: { editing: boolean }) {
 
   function handleNext() {
     if (!selected) return;
+    track('continue_click', { step: 'goal', goal: selected, mode: modeOf(editing) });
     // The chosen goal becomes the main one. Earlier goals stay, with their plan items.
     const isNew = !has(selected);
     setFocusGoal(selected);
@@ -59,7 +61,7 @@ function MainGoal({ editing }: { editing: boolean }) {
     <Screen
       footer={<Button label={t(editing ? 'Save' : 'Continue →')} onPress={handleNext} disabled={!selected} />}
     >
-      {editing ? <TopBar onBack={() => navigation.goBack()} label={t('Main goal')} /> : <TopBar step={1} total={onboardingTotal(selected ?? focusGoal)} />}
+      {editing ? <TopBar onBack={() => { track('back_click', { step: 'goal', mode: 'edit' }); navigation.goBack(); }} label={t('Main goal')} /> : <TopBar step={1} total={onboardingTotal(selected ?? focusGoal)} />}
 
       <Headline accent={t('focus on?')}>{t('Which goal would you like to')}</Headline>
       {editing && goals.length ? <Lead>{t('Your other goals and your plan stay.')}</Lead> : null}
@@ -72,7 +74,7 @@ function MainGoal({ editing }: { editing: boolean }) {
             title={t(g.label)}
             subtitle={editing && g.id === focusGoal ? t('Your main goal now') : editing && has(g.id) ? t('One of your goals') : t(g.sub)}
             selected={selected === g.id}
-            onPress={() => setSelected(g.id)}
+            onPress={() => { setSelected(g.id); track('goal_selected', { goal: g.id, mode: modeOf(editing) }); }}
           />
         ))}
       </View>

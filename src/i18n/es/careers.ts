@@ -17,6 +17,14 @@ const es: Record<string, string> = {
   'Source: federal rules (FMCSA, CMS, EPA, OSHA) and state licensing boards. Rules can differ by state — check the official page.': 'Fuente: normas federales (FMCSA, CMS, EPA, OSHA) y juntas estatales de licencias. Las reglas pueden cambiar según el estado: revisa la página oficial.',
   'Certifications': 'Certificaciones',
   'Required for my job': 'Obligatorias en mi trabajo',
+  'Certifications I have': 'Certificaciones que tengo',
+  'My certifications': 'Mis certificaciones',
+  'No license is required by law for your job. Add any certifications you have, and we won\'t suggest them again.': 'Tu trabajo no exige ninguna licencia por ley. Agrega las certificaciones que tienes y no te las volveremos a sugerir.',
+  'Add a certification you have': 'Agrega una certificación que tienes',
+  'Search, e.g. CPR, forklift, CDL': 'Busca, p. ej. CPR, montacargas, CDL',
+  'Add "{name}"': 'Agregar "{name}"',
+  'Other certifications you have': 'Otras certificaciones que tienes',
+  'Choose "Not yet" if you marked one by mistake. It will come back in your suggestions.': 'Elige "Todavía no" si marcaste una por error. Volverá a aparecer en tus sugerencias.',
   'Career change': 'Cambio de carrera',
 
   // Missing credential items

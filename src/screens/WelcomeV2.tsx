@@ -11,6 +11,7 @@ import * as Linking from 'expo-linking';
 import * as WebBrowser from 'expo-web-browser';
 import { RootStackParamList } from '../navigation/AppNavigator';
 import { resetToTabs } from '../lib/nav';
+import { track } from '../lib/analytics';
 import { supabase } from '../lib/supabase';
 import { useUserStore } from '../store/userStore';
 import BlueprintBackground from '../components/BlueprintBackground';
@@ -50,6 +51,7 @@ export default function WelcomeV2Screen() {
   const hydrateFromProfileRow = useUserStore((s) => s.hydrateFromProfileRow);
 
   async function handleGoogleSignIn() {
+    track('google_signin_click');
     setGoogleLoading(true);
     try {
       const redirectUrl = Linking.createURL('/');
@@ -62,11 +64,16 @@ export default function WelcomeV2Screen() {
 
       // Open Google in an auth session that returns the redirect URL to us
       const result = await WebBrowser.openAuthSessionAsync(data.url, redirectUrl);
-      if (result.type !== 'success') return;   // user closed the browser
+      if (result.type !== 'success') {          // user closed the browser
+        track('login_failed', { method: 'google', reason: 'cancelled' });
+        return;
+      }
 
       const userId = await completeSignIn(result.url);
+      track('login_succeeded', { method: 'google' });
       await routeAfterSignIn(userId);
     } catch (err: any) {
+      track('login_failed', { method: 'google', reason: String(err?.message ?? 'error') });
       Alert.alert(t('Google sign-in failed'), t(err.message || 'Please try again.'));
     } finally {
       setGoogleLoading(false);
@@ -148,6 +155,7 @@ export default function WelcomeV2Screen() {
               {t('GROW TOGETHER.')}{'\n'}
               <Text style={styles.headlineAccent}>{t('GO FURTHER.')}</Text>
             </Text>
+            <Text style={styles.tagline}>{t('BECAUSE HARD-WORKING PEOPLE DESERVE TO GET AHEAD.')}</Text>
           </View>
 
           {/* ── Value tiles (2×2) ────────────────────────────────────── */}
@@ -183,7 +191,7 @@ export default function WelcomeV2Screen() {
           <View style={[styles.pad, styles.actions]}>
             <Button
               label={t("Get started — it's free →")}
-              onPress={() => navigation.navigate('SignUp')}
+              onPress={() => { track('get_started_click'); navigation.navigate('SignUp'); }}
             />
 
             <TouchableOpacity
@@ -204,7 +212,7 @@ export default function WelcomeV2Screen() {
 
             <TouchableOpacity
               style={styles.signIn}
-              onPress={() => navigation.navigate('SignIn')}
+              onPress={() => { track('signin_link_click'); navigation.navigate('SignIn'); }}
               activeOpacity={0.7}
             >
               <Text style={styles.signInText}>
@@ -237,14 +245,15 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 6,
   },
+  // Brand tagline, under the headline
   tagline: {
     fontFamily: Fonts.displayItalic,
-    fontSize: 15,
-    lineHeight: 17,
+    fontSize: 17,
+    lineHeight: 20,
     letterSpacing: 0.6,
     color: Colors.slate,
-    textAlign: 'right',
-    transform: [{ rotate: '-5deg' }],
+    marginTop: 12,
+    transform: [{ rotate: '-3deg' }],
   },
 
   // Hero

@@ -10,7 +10,7 @@ const es: Record<string, string> = {
   'Fix My Job menu': 'Menú de Fix My Job',
   'Account menu': 'Menú de tu cuenta',
   'Share the app': 'Compartir la app',
-  'Try Fix My Job: because hard-working American people deserve to get ahead': 'Prueba Fix My Job: porque la gente trabajadora de Estados Unidos merece salir adelante',
+  'Try Fix My Job: because hard-working people deserve to get ahead': 'Prueba Fix My Job: porque quienes trabajan duro merecen salir adelante',
   'Signed in as': 'Sesión iniciada como',
   'Close menu': 'Cerrar menú',
   'Fix My Job logo': 'Logo de Fix My Job',
@@ -33,6 +33,7 @@ const es: Record<string, string> = {
   // Welcome / sign-in / sign-up
   'GROW TOGETHER.': 'CRECER JUNTOS.',
   'GO FURTHER.': 'LLEGAR MÁS LEJOS.',
+  'BECAUSE HARD-WORKING PEOPLE DESERVE TO GET AHEAD.': 'PORQUE QUIENES TRABAJAN DURO MERECEN SALIR ADELANTE.',
   'See where you rank vs. US peers': 'Mira cómo te comparas con otros trabajadores de EE. UU.',
   'Know your worth.': 'Conoce tu valor.',
   "Know every right you're entitled to": 'Conoce todos tus derechos',

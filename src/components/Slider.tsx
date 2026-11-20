@@ -10,6 +10,8 @@ interface SliderProps {
   onChange: (v: number) => void;
   /** Called once when the user first touches the slider */
   onTouched?: () => void;
+  /** Called when the finger lifts, with the value before and after the drag (analytics) */
+  onRelease?: (from: number, to: number) => void;
   /** Small labels under the ends of the track */
   minLabel?: string;
   maxLabel?: string;
@@ -21,13 +23,14 @@ const THUMB = 30;
  * Horizontal slider in plain React Native (no native module, so no app
  * rebuild needed). Tap anywhere on the track or drag the thumb.
  */
-export default function Slider({ value, min, max, step = 1, onChange, onTouched, minLabel, maxLabel }: SliderProps) {
+export default function Slider({ value, min, max, step = 1, onChange, onTouched, onRelease, minLabel, maxLabel }: SliderProps) {
   const [width, setWidth] = useState(0);
   const widthRef = useRef(0);
   const startX = useRef(0);
   const touched = useRef(false);
-  const props = useRef({ min, max, step, onChange, onTouched });
-  props.current = { min, max, step, onChange, onTouched };
+  const dragFrom = useRef(value);
+  const props = useRef({ value, min, max, step, onChange, onTouched, onRelease });
+  props.current = { value, min, max, step, onChange, onTouched, onRelease };
 
   const toValue = (x: number) => {
     const { min: lo, max: hi, step: st } = props.current;
@@ -46,8 +49,9 @@ export default function Slider({ value, min, max, step = 1, onChange, onTouched,
       onStartShouldSetPanResponder: () => true,
       onMoveShouldSetPanResponder: () => true,
       onPanResponderTerminationRequest: () => false,   // don't let the ScrollView steal the drag
-      onPanResponderGrant: (e) => { startX.current = e.nativeEvent.locationX; emit(startX.current); },
+      onPanResponderGrant: (e) => { dragFrom.current = props.current.value; startX.current = e.nativeEvent.locationX; emit(startX.current); },
       onPanResponderMove: (_e, g) => emit(startX.current + g.dx),
+      onPanResponderRelease: (_e, g) => props.current.onRelease?.(dragFrom.current, toValue(startX.current + g.dx)),
     }),
   ).current;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavigationContainer, NavigatorScreenParams } from '@react-navigation/native';
+import { NavigationContainer, NavigatorScreenParams, useNavigationContainerRef } from '@react-navigation/native';
 import type { Session } from '@supabase/supabase-js';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -47,6 +47,7 @@ import ShareScreen from '../screens/Share';
 import AllSuggestionsScreen from '../screens/AllSuggestions';
 import DataSourcesScreen from '../screens/DataSources';
 import SupportScreen from '../screens/Support';
+import { trackScreen } from '../lib/analytics';
 
 export type RootStackParamList = {
   Welcome: undefined;
@@ -117,9 +118,28 @@ export function startStateFor(session: Session | null, row: Record<string, any> 
   return { index: 1, routes: [{ name: 'Welcome' }, { name: next }] };
 }
 
+/**
+ * Screens that report their own screen views to analytics because one route
+ * holds several questions (ManualEntry: job · closest job · time in job · pay).
+ */
+const SELF_TRACKED_SCREENS = new Set(['ManualEntry']);
+
 export default function AppNavigator({ initialState }: { initialState?: StartState }) {
+  const navRef = useNavigationContainerRef<RootStackParamList>();
+
+  // Analytics: one screen view per screen change (tabs included, e.g. "Standing")
+  function onScreenChange() {
+    const name = navRef.getCurrentRoute()?.name;
+    if (name && !SELF_TRACKED_SCREENS.has(name)) trackScreen(name);
+  }
+
   return (
-    <NavigationContainer initialState={initialState as any}>
+    <NavigationContainer
+      ref={navRef}
+      initialState={initialState as any}
+      onReady={onScreenChange}
+      onStateChange={onScreenChange}
+    >
       <Stack.Navigator
         screenOptions={{
           headerShown: false,

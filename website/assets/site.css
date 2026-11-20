@@ -240,6 +240,14 @@ legend { font-weight: 600; margin-bottom: 8px; }
   transform: rotate(-3deg); transform-origin: left bottom;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
+.hero-titles { flex: 1; min-width: 0; }
+.hero-tagline {
+  margin: 16px 0 0; text-wrap: balance;
+  font-family: var(--display); font-style: italic; font-weight: 800;
+  font-size: clamp(16px, 2.1vw, 24px); line-height: 1.15; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--slate); transform: rotate(-3deg); transform-origin: left bottom;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
 .free-stamp {
   flex: none; width: 128px; height: 128px; border-radius: 50%;
   border: 3px solid var(--green); color: var(--green);
@@ -334,10 +342,5 @@ html, body { overflow-x: clip; }
   .tile-cap { font-size: 12.5px; min-height: 44px; padding: 5px 6px; }
 }
 
-/* Wide screens: the four tiles sit in one row, so the left column fills its width */
-@media (min-width: 1100px) {
-  .tiles { grid-template-columns: repeat(4, 1fr); gap: 14px; max-width: none; }
-  .tile { aspect-ratio: 4 / 5; }
-  .tile-title { font-size: 21px; min-height: 56px; }
-  .tile-cap { font-size: 14px; min-height: 56px; }
-}
+/* Tiles stay 2x2 at every width, like the app (one-row layout removed 2026-11-20) */
+@media (min-width: 1100px) { .tiles { max-width: 640px; gap: 14px; } }

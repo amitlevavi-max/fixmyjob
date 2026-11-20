@@ -13,6 +13,7 @@ import Icon from '../../components/Icon';
 import { Headline, Eyebrow, Lead } from '../../components/Typography';
 import { Colors, Fonts } from '../../theme';
 import { t } from '../../i18n';
+import { track } from '../../lib/analytics';
 
 type Nav = StackNavigationProp<RootStackParamList, 'SignUp'>;
 
@@ -27,6 +28,7 @@ export default function SignUpScreen() {
   const [showPassword, setShowPassword] = useState(false);
 
   async function handleSignUp() {
+    track('create_account_click');
     clearError();
 
     if (!username.trim()) {
@@ -44,8 +46,10 @@ export default function SignUpScreen() {
 
     try {
       await signUp(email.trim().toLowerCase(), password, username.trim());
+      track('account_created', { method: 'email' });
       navigation.navigate('GoalPicker');
     } catch {
+      track('signup_failed', { reason: useAuthStore.getState().error ?? 'error' });
       // error is already set in the store and displayed below
     }
   }
@@ -58,7 +62,7 @@ export default function SignUpScreen() {
 
   return (
     <Screen>
-      <TopBar onBack={() => navigation.goBack()} label={t('Free account')} />
+      <TopBar onBack={() => { track('back_click', { step: 'signup' }); navigation.goBack(); }} label={t('Free account')} />
 
       <Eyebrow>{t('Takes 30 seconds · No card needed')}</Eyebrow>
       <Headline accent={t('account')}>{t('Create your')}</Headline>
@@ -114,7 +118,7 @@ export default function SignUpScreen() {
 
       <Button label={t('Create account →')} onPress={handleSignUp} loading={isLoading} />
 
-      <TouchableOpacity style={styles.switchLink} onPress={() => navigation.navigate('SignIn')}>
+      <TouchableOpacity style={styles.switchLink} onPress={() => { track('signin_link_click'); navigation.navigate('SignIn'); }}>
         <Text style={styles.switchText}>
           Already have an account?{'  '}
           <Text style={styles.switchHighlight}>{t('Sign in')}</Text>

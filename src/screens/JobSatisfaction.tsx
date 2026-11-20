@@ -15,6 +15,7 @@ import Notice from '../components/Notice';
 import { Headline, Lead } from '../components/Typography';
 import { Colors, Fonts, Radii } from '../theme';
 import { t } from '../i18n';
+import { track, modeOf } from '../lib/analytics';
 
 type Nav = StackNavigationProp<RootStackParamList, 'JobSatisfaction'>;
 
@@ -84,6 +85,7 @@ export default function JobSatisfactionScreen() {
 
   async function handleNext() {
     if (!selected) return;
+    track('continue_click', { step: 'satisfaction', value: selected, mode: modeOf(editing) });
     if (goal) setGoalSatisfaction(goal, selected);
     if (editing) { backToProfile(navigation, q.short); return; }
     // Limited launch: manual entry only — the import-method screen is kept but skipped
@@ -93,8 +95,8 @@ export default function JobSatisfactionScreen() {
   return (
     <Screen footer={<Button label={t(editing ? 'Save' : 'Next →')} onPress={handleNext} disabled={!selected} />}>
       {editing
-        ? <TopBar onBack={() => navigation.goBack()} label={t('Edit')} />
-        : <TopBar onBack={() => navigation.goBack()} step={2} total={onboardingTotal(goal)} />}
+        ? <TopBar onBack={() => { track('back_click', { step: 'satisfaction', mode: 'edit' }); navigation.goBack(); }} label={t('Edit')} />
+        : <TopBar onBack={() => { track('back_click', { step: 'satisfaction', mode: 'onboarding' }); navigation.goBack(); }} step={2} total={onboardingTotal(goal)} />}
 
       <Headline accent={t(q.accent)}>{t(q.title)}</Headline>
       <Lead>{t('Be honest. This helps us see what matters most to you.')}</Lead>
@@ -107,7 +109,7 @@ export default function JobSatisfactionScreen() {
               <TouchableOpacity
                 key={s.value}
                 style={[styles.option, on && styles.optionOn]}
-                onPress={() => setSelected(s.value)}
+                onPress={() => { setSelected(s.value); track('satisfaction_selected', { value: s.value, goal, mode: modeOf(editing) }); }}
                 activeOpacity={0.8}
               >
                 <Icon name={s.icon} size={34} color={on ? Colors.accentHi : Colors.slate} />

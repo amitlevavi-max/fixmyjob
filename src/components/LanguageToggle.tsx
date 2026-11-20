@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { LANGUAGES, Lang, useLangStore, changeLanguage } from '../i18n';
 import { useAuthStore } from '../store/authStore';
 import Icon from './Icon';
+import { track } from '../lib/analytics';
 import { Colors, Fonts, Radii } from '../theme';
 
 interface Props {
@@ -19,6 +20,7 @@ export default function LanguageToggle({ save = false, compact = false }: Props)
 
   function pick(l: Lang) {
     if (l === lang) return;
+    track('language_changed', { from: lang, to: l });
     if (save) changeLanguage(l, userId);
     else useLangStore.setState({ lang: l });
   }

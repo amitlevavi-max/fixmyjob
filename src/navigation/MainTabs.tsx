@@ -16,6 +16,14 @@ import StandingScreen from '../screens/Standing';
 import MyPlanScreen from '../screens/MyPlan';
 import { lw } from '../i18n/withLanguage';
 import { useT } from '../i18n';
+import { track } from '../lib/analytics';
+
+/** Tab names in analytics reports */
+const TAB_EVENT_NAMES: Record<keyof TabParamList, string> = {
+  Profile: 'profile',
+  Standing: 'where_i_stand',
+  Plan: 'my_plan',
+};
 
 export type TabParamList = {
   Profile: { saved?: string } | undefined;
@@ -37,6 +45,10 @@ export default function MainTabs() {
   return (
     <Tab.Navigator
       initialRouteName="Standing"
+      // Analytics: a tap on a bottom tab (event.screen = the screen the user was on)
+      screenListeners={({ route }) => ({
+        tabPress: () => track('tab_click', { tab: TAB_EVENT_NAMES[route.name as keyof TabParamList] }),
+      })}
       screenOptions={({ route }) => ({
         headerShown: false,
         tabBarActiveTintColor: Colors.accentHi,
