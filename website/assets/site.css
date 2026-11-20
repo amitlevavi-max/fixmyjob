@@ -244,7 +244,7 @@ legend { font-weight: 600; margin-bottom: 8px; }
 .brand-tagline {
   max-width: none; text-wrap: balance;
   font-family: var(--display); font-style: italic; font-weight: 800;
-  font-size: clamp(19px, 2.2vw, 26px); line-height: 1.15; letter-spacing: 0.05em; text-transform: uppercase;
+  font-size: clamp(23px, 2.8vw, 32px); line-height: 1.12; letter-spacing: 0.05em; text-transform: uppercase;
   color: var(--slate);
 }
 .free-stamp {
